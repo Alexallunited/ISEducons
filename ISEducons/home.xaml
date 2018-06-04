@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="ISEducons.home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             
+             
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             
+             xmlns:local="clr-namespace:ISEducons"
+             mc:Ignorable="d" 
+             d:DesignHeight="528" d:DesignWidth="800">
+    <Grid Background="#FFF0F0F0">
+        <Label Content="Ovo je primer Home stranice" HorizontalAlignment="Left" Margin="256,106,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="22" Foreground="#DD000000"/>
+        <Label Content="labela broj 2 kao primer" HorizontalAlignment="Left" Margin="285,195,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="22" Foreground="#DD000000"/>
+        <Button Content="dugme broj 1" HorizontalAlignment="Left" Margin="256,357,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click"/>
+        <Button HorizontalAlignment="Left" Margin="482,357,0,0" VerticalAlignment="Top" Width="89" 
+               >
+            Dug
+        </Button>
+        <Image Source="C:\Users\alexa\Desktop\Icons\rs.png" HorizontalAlignment="Left" Height="100" Margin="233,237,0,0" VerticalAlignment="Top" Width="105"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,85 @@
+﻿<Window x:Class="ISEducons.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISEducons"
+        mc:Ignorable="d"
+        
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        
+        Title="IS Educons" Height="576" Width="1024" WindowStyle="None" WindowStartupLocation="CenterScreen" UseLayoutRounding="False" ResizeMode="NoResize">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+
+    <Grid Width="1024" Height="576" Background="#FFF0F0F0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="328*"/>
+            <ColumnDefinition Width="248*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+
+        <DockPanel Height="576" LastChildFill="False" VerticalAlignment="Top" HorizontalAlignment="Left" Width="224">
+            <DockPanel.Background>
+                <SolidColorBrush Color="#FF2D2D30"/>
+            </DockPanel.Background>
+            <StackPanel Height="47" VerticalAlignment="Center" Width="224" DockPanel.Dock="Top" HorizontalAlignment="Center">
+                <Image Height="43" Source="Icons\edulogoNegsmall.png" Stretch="Fill" Width="170" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="27,2"/>
+            </StackPanel>
+        </DockPanel>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="Home" Content="Početak" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Margin="10,48,0,0" Click="Home_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF2D2D30"/>
+            </Button.Background>
+        </Button>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="help" Content="Pomoć" HorizontalAlignment="Left" Margin="10,532,0,0" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Click="help_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="options" Content="Opcije" HorizontalAlignment="Left" Margin="10,488,0,0" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Click="options_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="nabavka" Content="Nabavka" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,444,0,0" Click="nabavka_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="odrzavanje" Content="Održavanje" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,400,0,0" Click="odrzavanje_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="obezbedjenje" Content="Obezbeđenje" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,356,0,0" Click="obezbedjenje_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="biblioteka" Content="Biblioteka" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,312,0,0" Click="biblioteka_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="studentskaSluzba" Content="Studentska Služba" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,268,0,0" Click="studentskaSluzba_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="finansijskaSluzba" Content="Finansijska Služba" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,224,0,0" Click="finansijskaSluzba_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="itSektor" Content="IT Sektor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,180,0,0" Click="itSektor_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="pravnaSluzba" Content="Pravna Služba" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,136,0,0" Click="pravnaSluzba_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}" x:Name="rektorat" Content="Rektorat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Height="44" Foreground="White" FontFamily="Century Gothic" BorderThickness="0" Background="#FF2D2D30" Margin="10,92,0,0" Click="rektorat_Click"/>
+        <Button Style="{StaticResource MaterialDesignFloatingActionDarkButton}" x:Name="Home_Copy12"  VerticalAlignment="Top" Width="28" Height="28" Foreground="{x:Null}" FontFamily="Century Gothic" BorderThickness="0" Margin="219,10,10,0" Grid.Column="3" Background="{x:Null}" Click="Home_Copy12_Click" BorderBrush="{x:Null}"             >
+            <materialDesign:PackIcon Kind="Power" Foreground="#CC2D2D30" Width="25" Height="25"/>
+
+        </Button>
+        <StackPanel x:Name="SidePanel" HorizontalAlignment="Left" Height="44" Margin="0,48,0,0" VerticalAlignment="Top" Width="10">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB91C1F"/>
+                    <GradientStop Color="#FFB91C1F" Offset="1"/>
+                    <GradientStop Color="#FFE22125" Offset="0.496"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0"/>
+        </StackPanel>
+        <local:itSektor x:Name="itSektorScreen" HorizontalAlignment="Left" Height="528" Margin="224,49,0,-1" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="4"/>
+        <local:home x:Name="homeScreen" HorizontalAlignment="Left" Height="528" Margin="224,43,0,0" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="4"/>
+
+
+
+
+
+
+
+    </Grid>
+</Window>

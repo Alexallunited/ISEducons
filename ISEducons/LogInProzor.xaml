@@ -1,0 +1,84 @@
+﻿<Window x:Class="ISEducons.LogInProzor"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISEducons"
+        mc:Ignorable="d"
+        
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        
+        Title="LogInProzor" Height="216" Width="384" WindowStyle="None" WindowStartupLocation="CenterScreen" UseLayoutRounding="False" ResizeMode="NoResize">
+
+    <materialDesign:DialogHost x:Name="MainWindowDialogHost" Identifier="RootDialog" SnackbarMessageQueue="{Binding ElementName=MainSnackbar, Path=MessageQueue}">
+        <Grid Background="#ffF0F0F0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <TextBox x:Name="UsernameBox"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" ToolTip="Unesite vaše korisničko ime" Margin="40,18,41,52" Foreground="#FF2D2D30" FontWeight="Bold" VerticalAlignment="Center" Height="38" Grid.ColumnSpan="2" >
+                <materialDesign:HintAssist.Hint>
+                    <StackPanel Orientation="Horizontal" Margin="-2 0 0 0">
+                        <materialDesign:PackIcon
+                         Kind="Account" />
+                        <TextBlock>
+                         Korisničko ime
+                        </TextBlock>
+                    </StackPanel>
+                </materialDesign:HintAssist.Hint>
+            </TextBox>
+
+
+            <PasswordBox x:Name="PasswordBox"
+            Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" ToolTip="Unesite vašu korisničku šifru" Margin="40,70,40,0" Foreground="#FF2D2D30" FontWeight="Bold" VerticalAlignment="Center" Height="38" Grid.ColumnSpan="2" >
+                <materialDesign:HintAssist.Hint>
+                    <StackPanel Orientation="Horizontal" Margin="-2 0 0 0">
+                        <materialDesign:PackIcon
+                         Kind="KeyVariant" />
+                        <TextBlock>
+                         Šifra
+                        </TextBlock>
+                    </StackPanel>
+                </materialDesign:HintAssist.Hint>
+            </PasswordBox>
+
+
+
+
+
+
+            <Button x:Name="LogIn" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Height="50" Width="110" Margin="25,20,26,10" Grid.Row="1" Background="#FF2D2D30" Click="LogIn_Click">
+                <StackPanel Orientation="Horizontal" Width="55">
+                    <TextBlock Text="Log in" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="67"/>
+                </StackPanel>
+
+            </Button>
+            <Button x:Name="Exit" Style="{DynamicResource MaterialDesignRaisedDarkButton}" BorderThickness="0" Height="50" Width="110" Margin="25,25,25,15" Grid.Row="1" Background="#FF2D2D30" Grid.Column="1" Click="Exit_Click"  >
+
+                <StackPanel Orientation="Horizontal" Width="39">
+                    <TextBlock Text="Izlaz" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="44"/>
+                </StackPanel>
+
+            </Button>
+
+        </Grid>
+    </materialDesign:DialogHost>
+</Window>

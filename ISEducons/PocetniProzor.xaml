@@ -1,0 +1,189 @@
+﻿<Window x:Class="ISEducons.PocetniProzor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        
+        
+        
+        
+        
+        
+        xmlns:local="clr-namespace:ISEducons"
+        mc:Ignorable="d"
+        Title="PocetniProzor" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800"  ResizeMode="CanResizeWithGrip" AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown"  >
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+
+
+
+    <materialDesign:DialogHost x:Name="MainWindowDialogHost" Identifier="RootDialog" SnackbarMessageQueue="{Binding ElementName=MainSnackbar, Path=MessageQueue}">
+        <Grid Background="#FFF0F0F0" MinWidth="800" MinHeight="450" Margin="0,0,0,-1" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="172"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="174*"/>
+            <ColumnDefinition Width="425*"/>
+            <ColumnDefinition Width="201*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="2">
+            <Button x:Name="TestDugme" Click="TestDugme_Click">
+                TEST DUGME
+            </Button>
+            
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="3" >
+            <materialDesign:Snackbar
+            MessageQueue="{materialDesign:MessageQueue}"
+            x:Name="SnackbarThree" />
+        </Grid>
+
+
+        <Grid Grid.Column="1" Grid.Row="2" >
+                <materialDesign:Card Background="#FFFDBCAE"
+                      Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                      Padding="1">
+                    <StackPanel HorizontalAlignment="Stretch" >
+                        <TextBlock Margin="16 16 12 8" FontSize="16" Foreground="#FF2D2D30">TO DO Lista(Jednostavnije od Tamare)</TextBlock>
+                        <CheckBox Margin="16,4,16,0" Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Foreground="#FF2D2D30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">Testiram širinu teksta</CheckBox>
+                        <CheckBox Margin="16 4 16 0" Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Foreground="#FF2D2D30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">Kodiram ovo već 4 dana non stop, samo gledam kada ću da poludim. Salim se (za to da ću da poludim) samo testiram širinu teksta</CheckBox>
+                        <CheckBox Margin="16,4,0,0" Style="{StaticResource MaterialDesignUserForegroundCheckBox}" HorizontalAlignment="Left" Width="393" Foreground="#FF2D2D30" VerticalAlignment="Stretch">Programerima treba više sunca</CheckBox>
+                        <Separator Style="{StaticResource MaterialDesignDarkSeparator}" Background="#33000000" />
+                        <StackPanel Margin="8 0 8 8" Orientation="Horizontal" HorizontalAlignment="Right">
+                            
+                            <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
+                                    ToolTip="Kliknite kako biste dodali odrađene zadatke" Width="30" Padding="2 0 0 0"
+                                    materialDesign:RippleAssist.IsCentered="True">
+                                <materialDesign:PackIcon Kind="Plus" Foreground="#E52D2D30" />
+                            </Button>
+                            
+                            <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
+                                    ToolTip="Kliknite kako biste sklonili odrađene (štiklirane) zadatke" Width="30" Padding="2 0 0 0"
+                                    materialDesign:RippleAssist.IsCentered="True">
+                                <materialDesign:PackIcon Kind="CheckAll" Foreground="#E52D2D30" />
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+            </materialDesign:Card>
+        </Grid>
+
+       
+            <materialDesign:DrawerHost HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}" Grid.ColumnSpan="3"  Margin="-6,-6,-3,-2" Grid.RowSpan="4">
+                <materialDesign:DrawerHost.LeftDrawerContent>
+                    <StackPanel Margin="16">
+                        <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
+                                  ToolTip="Ova opcija zatvara trenutno otvoren meni"
+                                  Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                                  CommandParameter="{x:Static Dock.Left}"
+                                  DockPanel.Dock="Top"
+                                  HorizontalAlignment="Right" Margin="16"
+                                  IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />
+                        <TextBlock Margin="4" HorizontalAlignment="Center">ODABIR POSLA</TextBlock>
+                        <Menu>
+                            <MenuItem Header="Izveštaj" Width="210">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="File" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </Menu>
+                        <Menu>
+                        <MenuItem Header="Plan" Width="210">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="FileOutline" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        </Menu>
+                        <Menu>
+                            <MenuItem Header="Tehničko održavanje">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="MenuDown" />
+                                </MenuItem.Icon>
+
+                                <MenuItem Header="Skeniraj mrežu">
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="AccessPointNetwork" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem Header="Info o računarima">
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="DesktopClassic" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <MenuItem Header="Upravljanje korisnicima">
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="AccountMultiple" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+
+
+                            </MenuItem>
+                        </Menu>
+
+
+                    </StackPanel>
+                </materialDesign:DrawerHost.LeftDrawerContent>
+
+
+                <Grid MinWidth="480" MinHeight="480">
+                    <DockPanel Grid.RowSpan="2" Grid.ColumnSpan="9">
+                        <materialDesign:ColorZone Padding="16" materialDesign:ShadowAssist.ShadowDepth="Depth3" Mode="Standard" DockPanel.Dock="Top">
+                            <DockPanel Grid.RowSpan="2" Grid.ColumnSpan="9">
+                                <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False"
+                                  ToolTip="Ova opcija nudi mogućnost odabira poslova"
+                                  x:Name="MenuToggleButton"
+                                  Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                                  CommandParameter="{x:Static Dock.Left}" />
+                                <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" ToolTip="Više opcija">
+                                    <StackPanel>
+                                        <Button x:Name="izgled" Content="Izgled" Click="izgled_Click" ToolTip="Opcija za promenu izgleda"/>
+                                        <Button x:Name="nalog" Content="Moj nalog" Click="nalog_Click" ToolTip="Opcija za podešavanje naloga trenutno ulogovanog korisnika"/>
+                                        <Separator/>
+                                        <Button x:Name="dokumentacija" Content="Dokumentacija" Click="dokumentacija_Click" ToolTip="Dokumentacija o softveru"/>
+                                        <Button x:Name="about" Content="O programeru" Click="about_Click" ToolTip="Informacije o programeru"/>
+                                        <Separator/>
+                                        <Button x:Name="logout" Content="Log out" Click="logout_Click" ToolTip="Opcija za logout trenutnog korisnika"/>
+                                        <Separator/>
+                                        <Button x:Name="exit" Content="Zatvori program" Click="exit_Click" ToolTip="Opcija za napuštanje iz programa"/>
+                                    </StackPanel>
+                                </materialDesign:PopupBox>
+                                <TextBlock x:Name="header" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Informacioni sistem Univerziteta Educons</TextBlock>
+                            </DockPanel>
+                        </materialDesign:ColorZone>
+                        <Grid Margin="0,0,0,24">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar" Grid.Row="1" />
+                        </Grid>
+                    </DockPanel>
+                </Grid>
+            </materialDesign:DrawerHost>
+
+
+        
+
+
+        </Grid>
+    </materialDesign:DialogHost>
+</Window>
