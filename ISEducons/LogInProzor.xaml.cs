@@ -32,44 +32,44 @@ namespace ISEducons
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
 
-            
+
             this.Hide();
             PocetniProzor test = new PocetniProzor();
             test.ShowDialog();
-            
-
-           
-            /*
-
-            if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameA && PasswordBox.Password == ISEducons.Properties.Resources.PasswordA) //ovo bas i nije najsigurniji nacin da se cuva passworda al ajd sad
-            {
-                this.Hide();
-                PocetniProzor test = new PocetniProzor();
-                test.ShowDialog();
-            }
-            else
-            {
-                if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameU && PasswordBox.Password == ISEducons.Properties.Resources.PasswordU)
-                {
-                    
-
-                    MainWindowDialogHost.DialogContent = new KorisnikPostojiDialog(); //otvara UserControl exitDialog kao dialog
-                    MainWindowDialogHost.IsOpen = true;
-
-                }
 
 
-                else
-                {
-                    if ((UsernameBox.Text != ISEducons.Properties.Resources.UsernameA || UsernameBox.Text != ISEducons.Properties.Resources.UsernameU)
-                        &&
-                       (PasswordBox.Password != ISEducons.Properties.Resources.PasswordA || PasswordBox.Password != ISEducons.Properties.Resources.PasswordU))
 
-                        MainWindowDialogHost.DialogContent = new KorisnikNePostojiDialogxaml(); //otvara UserControl exitDialog kao dialog
-                        MainWindowDialogHost.IsOpen = true;
 
-                }
-            }
+
+            //if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameA && PasswordBox.Password == ISEducons.Properties.Resources.PasswordA) //ovo bas i nije najsigurniji nacin da se cuva passworda al ajd sad
+            //{
+            //    this.Hide();
+            //    PocetniProzor test = new PocetniProzor();
+            //    test.ShowDialog();
+            //}
+            //else
+            //{
+            //    if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameU && PasswordBox.Password == ISEducons.Properties.Resources.PasswordU)
+            //    {
+
+
+            //        MainWindowDialogHost.DialogContent = new KorisnikPostojiDialog(); //otvara UserControl exitDialog kao dialog
+            //        MainWindowDialogHost.IsOpen = true;
+
+            //    }
+
+
+            //    else
+            //    {
+            //        if ((UsernameBox.Text != ISEducons.Properties.Resources.UsernameA || UsernameBox.Text != ISEducons.Properties.Resources.UsernameU)
+            //            &&
+            //           (PasswordBox.Password != ISEducons.Properties.Resources.PasswordA || PasswordBox.Password != ISEducons.Properties.Resources.PasswordU))
+
+            //            MainWindowDialogHost.DialogContent = new KorisnikNePostojiDialogxaml(); //otvara UserControl exitDialog kao dialog
+            //            MainWindowDialogHost.IsOpen = true;
+
+            //    }
+            //}
 
 
 

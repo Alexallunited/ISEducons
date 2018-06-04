@@ -19,7 +19,7 @@
         
         
         mc:Ignorable="d"
-        Title="NetworkScanner" Height="420" Width="420" WindowStyle="None">
+        Title="NetworkScanner" Height="420" Width="420" WindowStyle="None" WindowStartupLocation="CenterScreen"   ResizeMode="NoResize" AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="318*"/>
@@ -45,19 +45,22 @@
         <Button x:Name="stop" Margin="337,10,10,10" Height="Auto" Click="cmdStop_Click" Grid.Row="1">
             <materialDesign:PackIcon Kind="Stop"  />
         </Button>
-        <TextBox x:Name="boxIP" Grid.Row="1"
+        <TextBox x:Name="boxIP" Grid.Row="1" Text="{Binding Path=ip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
             materialDesign:HintAssist.Hint="Npr. 192.168.1" Margin="104,0,185,9" />
 
 
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="304" Margin="10,10,0,0" VerticalAlignment="Top" Width="392">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="304" Margin="10,10,0,0" VerticalAlignment="Top" Width="400">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="IP" DisplayMemberBinding="{Binding Ip}" Width="120" />
-                    <GridViewColumn Header="Hostname" DisplayMemberBinding="{Binding Ip}" Width="170" />
-                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Ip}" Width="130" />
+                    <GridViewColumn Header="IP" DisplayMemberBinding="{Binding Path=Ip }" Width="120" />
+                    <GridViewColumn Header="Hostname" DisplayMemberBinding="{Binding Path=Hostname}" Width="160" />
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=Status}" Width="90" />
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button x:Name="exit" Margin="337,44,10,21" Height="Auto" Click="exit_Click" Grid.Row="1" Grid.RowSpan="2">
+            <materialDesign:PackIcon Kind="Close"  />
+        </Button>
 
 
     </Grid>

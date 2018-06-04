@@ -1,0 +1,263 @@
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\home.g.cs
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\MainWindow.g.cs
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\App.g.cs
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.cache
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.lref
+c:\users\alexa\source\repos\ISEducons\ISEducons\bin\Debug\ISEducons.exe.config
+c:\users\alexa\source\repos\ISEducons\ISEducons\bin\Debug\ISEducons.exe
+c:\users\alexa\source\repos\ISEducons\ISEducons\bin\Debug\ISEducons.pdb
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\App.baml
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\home.baml
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\MainWindow.baml
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons.g.resources
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons.Properties.Resources.resources
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.GenerateResource.cache
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CoreCompileInputs.cache
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons.exe
+c:\users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons.pdb
+C:\Users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\itSektor.g.cs
+C:\Users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\itSektor.baml
+C:\Users\alexa\source\repos\ISEducons\ISEducons\obj\Debug\ISEducons.csprojResolveAssemblyReference.cache
+G:\ISEducons\ISEducons\bin\Debug\ISEducons.exe.config
+G:\ISEducons\ISEducons\obj\Debug\ISEducons.exe
+G:\ISEducons\ISEducons\obj\Debug\ISEducons.pdb
+G:\ISEducons\ISEducons\bin\Debug\ISEducons.exe
+G:\ISEducons\ISEducons\bin\Debug\ISEducons.pdb
+G:\ISEducons\ISEducons\obj\Debug\ISEducons.csprojResolveAssemblyReference.cache
+G:\ISEducons\ISEducons\obj\Debug\home.g.cs
+G:\ISEducons\ISEducons\obj\Debug\itSektor.g.cs
+G:\ISEducons\ISEducons\obj\Debug\MainWindow.g.cs
+G:\ISEducons\ISEducons\obj\Debug\App.g.cs
+G:\ISEducons\ISEducons\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.cache
+G:\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.lref
+G:\ISEducons\ISEducons\obj\Debug\App.baml
+G:\ISEducons\ISEducons\obj\Debug\home.baml
+G:\ISEducons\ISEducons\obj\Debug\itSektor.baml
+G:\ISEducons\ISEducons\obj\Debug\MainWindow.baml
+G:\ISEducons\ISEducons\obj\Debug\ISEducons.g.resources
+G:\ISEducons\ISEducons\obj\Debug\ISEducons.Properties.Resources.resources
+G:\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.GenerateResource.Cache
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\bin\Debug\ISEducons.exe.config
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\bin\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\bin\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons.csprojResolveAssemblyReference.cache
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\home.g.cs
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\itSektor.g.cs
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\MainWindow.g.cs
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\App.g.cs
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.cache
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.lref
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\App.baml
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\home.baml
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\itSektor.baml
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\MainWindow.baml
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons.g.resources
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons.Properties.Resources.resources
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.GenerateResource.cache
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\SiMS\ISEducons\ISEducons\obj\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\ISEducons.exe.config
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\home.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\itSektor.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\MainWindow.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\App.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.cache
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.lref
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\home.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\itSektor.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\MainWindow.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.g.resources
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.Properties.Resources.resources
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.GenerateResource.cache
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\WpfRichText.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CopyComplete
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\RibbonControlsLibrary.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\MaterialDesignColors.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\MaterialDesignColors.pdb
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\App.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\exitScreen.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\exitScreen.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\exitDialog.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\exitDialog.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\ISEducons.exe.manifest
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\bin\Debug\ISEducons.application
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.exe.manifest
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.application
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\LogInProzor.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\LogInProzor.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\PocetniProzor.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\PocetniProzor.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\InfoEkran.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\InfoEkran.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\ISEducons.csprojAssemblyReference.cache
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\Izgled.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\Izgled.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\KorisnikNePostojiDialogxaml.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\KorisnikPostojiDialog.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\KorisnikNePostojiDialogxaml.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\KorisnikPostojiDialog.baml
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\NetworkScanner.g.cs
+C:\Users\alexa\Desktop\SiMS\Rad\ISEducons\ISEducons\obj\Debug\NetworkScanner.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\ISEducons.exe.config
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\ISEducons.exe.manifest
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\ISEducons.application
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\MaterialDesignColors.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\RibbonControlsLibrary.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\WpfRichText.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\MaterialDesignColors.pdb
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.csprojAssemblyReference.cache
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\exitDialog.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\exitScreen.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\home.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\InfoEkran.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\itSektor.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\Izgled.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\KorisnikNePostojiDialogxaml.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\KorisnikPostojiDialog.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\LogInProzor.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\MainWindow.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\NetworkScanner.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\PocetniProzor.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\App.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.cache
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.lref
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\App.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\exitDialog.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\exitScreen.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\home.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\InfoEkran.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\itSektor.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\Izgled.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\KorisnikNePostojiDialogxaml.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\KorisnikPostojiDialog.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\LogInProzor.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\MainWindow.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\NetworkScanner.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\PocetniProzor.baml
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.g.resources
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.Properties.Resources.resources
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.GenerateResource.cache
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.exe.manifest
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.application
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CopyComplete
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\New folder\ISEducons\ISEducons\obj\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ISEducons.exe.config
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ISEducons.exe.manifest
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ISEducons.application
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\MaterialDesignColors.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\RibbonControlsLibrary.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\WpfRichText.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\MaterialDesignColors.pdb
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.csprojAssemblyReference.cache
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\exitDialog.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\exitScreen.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\home.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\InfoEkran.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\itSektor.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Izgled.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\KorisnikNePostojiDialogxaml.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\KorisnikPostojiDialog.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\LogInProzor.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\MainWindow.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\NetworkScanner.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\PocetniProzor.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\App.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.cache
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons_MarkupCompile.lref
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\App.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\exitDialog.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\exitScreen.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\home.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\InfoEkran.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\itSektor.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Izgled.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\KorisnikNePostojiDialogxaml.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\KorisnikPostojiDialog.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\LogInProzor.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\MainWindow.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\NetworkScanner.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\PocetniProzor.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.g.resources
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.Properties.Resources.resources
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.GenerateResource.cache
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.exe.manifest
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.application
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CopyComplete
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.exe
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.pdb
