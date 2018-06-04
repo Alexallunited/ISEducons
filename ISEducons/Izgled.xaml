@@ -13,7 +13,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Button x:Name="no" Style="{DynamicResource MaterialDesignRaisedDarkButton}"
-                ToolTip="Kliknite kako bisete potvrdili temu"
+                ToolTip="Klikni kako bi potvrdili odabir teme"
                 BorderThickness="0" Height="Auto" Margin="115,133,115,15" Background="#FF2D2D30" 
                 Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
                 CommandParameter="Sample2Cancel"
@@ -32,11 +32,11 @@
         <Button
             Style="{StaticResource MaterialDesignFloatingActionButton}"
             materialDesign:RippleAssist.Feedback="#FF706868"
-            ToolTip="Kliknite za svetlu temu" Margin="180,54,100,86" Height="Auto" Width="Auto" Background="#FFF0F0F0" BorderBrush="#FFF0F0F0" Click="Light_Click" RenderTransformOrigin="0.288,0.512">
+            ToolTip="Klikni za svetlu temu" Margin="180,54,100,86" Height="Auto" Width="Auto" Background="#FFF0F0F0" BorderBrush="#FFF0F0F0" Click="Light_Click" RenderTransformOrigin="0.288,0.512">
         </Button>
         <Button
             Style="{StaticResource MaterialDesignFloatingActionButton}"
-            ToolTip="Kliknite za tamnu temu" Margin="233,54,47,86" Height="Auto" Width="Auto" Background="#FF2D2D30" BorderBrush="#FF2D2D30" Click="Dark_Click">
+            ToolTip="Klikni za tamnu temu" Margin="233,54,47,86" Height="Auto" Width="Auto" Background="#FF2D2D30" BorderBrush="#FF2D2D30" Click="Dark_Click">
         </Button>
 
 

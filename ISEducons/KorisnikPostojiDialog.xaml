@@ -29,6 +29,7 @@
         <Button x:Name="Exit" Style="{DynamicResource MaterialDesignRaisedDarkButton}" BorderThickness="0" Height="50" Width="110" Margin="95,25,95,6" Grid.Row="1" Background="#FF2D2D30" Click="Exit_Click"  
                 Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
                 CommandParameter="Sample2Cancel" Grid.ColumnSpan="2"
+                ToolTip="Zatvori trenutno otvoren prozor"
                 >
 
             <StackPanel Orientation="Horizontal" Width="60">
@@ -37,7 +38,7 @@
 
         </Button>
 
-        <Label FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="10,10,10,61" Grid.ColumnSpan="2" Content="Ovaj korisnik je u sistemu &#xD;&#xA;   ali interfejs za njega je&#xD;&#xA;       trenutno u razvoju" Foreground="#DD000000" Grid.RowSpan="2"/>
+        <Label FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="10,10,10,61" Grid.ColumnSpan="2" Content="   Vaš nalog je u sistemu &#xD;&#xA;   ali interfejs za njega je&#xD;&#xA;       trenutno u razvoju" Foreground="#DD000000" Grid.RowSpan="2"/>
 
     </Grid>
 </UserControl>

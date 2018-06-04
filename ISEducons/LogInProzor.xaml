@@ -65,13 +65,13 @@
 
 
 
-            <Button x:Name="LogIn" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Height="50" Width="110" Margin="25,20,26,10" Grid.Row="1" Background="#FF2D2D30" Click="LogIn_Click">
-                <StackPanel Orientation="Horizontal" Width="55">
-                    <TextBlock Text="Log in" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="67"/>
+            <Button x:Name="LogIn" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Height="50" Width="110" Margin="25,20,26,10" Grid.Row="1" Background="#FF2D2D30" Click="LogIn_Click" ToolTip="Prijava na sistem">
+                <StackPanel Orientation="Horizontal" Width="58">
+                    <TextBlock Text="Prijava" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="71"/>
                 </StackPanel>
 
             </Button>
-            <Button x:Name="Exit" Style="{DynamicResource MaterialDesignRaisedDarkButton}" BorderThickness="0" Height="50" Width="110" Margin="25,25,25,15" Grid.Row="1" Background="#FF2D2D30" Grid.Column="1" Click="Exit_Click"  >
+            <Button x:Name="Exit" Style="{DynamicResource MaterialDesignRaisedDarkButton}" BorderThickness="0" Height="50" Width="110" Margin="25,25,25,15" Grid.Row="1" Background="#FF2D2D30" Grid.Column="1" Click="Exit_Click" ToolTip="Zatvori program" >
 
                 <StackPanel Orientation="Horizontal" Width="39">
                     <TextBlock Text="Izlaz" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="44"/>

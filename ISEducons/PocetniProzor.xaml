@@ -44,7 +44,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0" Grid.Row="2">
-            <Button x:Name="TestDugme" Click="TestDugme_Click">
+                <Button x:Name="TestDugme" Click="TestDugme_Click" ToolTip="Test dugme OČEKIVANO ZAR NE?">
                 TEST DUGME
             </Button>
             
@@ -70,13 +70,13 @@
                         <StackPanel Margin="8 0 8 8" Orientation="Horizontal" HorizontalAlignment="Right">
                             
                             <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
-                                    ToolTip="Kliknite kako biste dodali odrađene zadatke" Width="30" Padding="2 0 0 0"
+                                    ToolTip="Dodavanje novih zadataka na TO DO lstu" Width="30" Padding="2 0 0 0"
                                     materialDesign:RippleAssist.IsCentered="True">
                                 <materialDesign:PackIcon Kind="Plus" Foreground="#E52D2D30" />
                             </Button>
                             
                             <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
-                                    ToolTip="Kliknite kako biste sklonili odrađene (štiklirane) zadatke" Width="30" Padding="2 0 0 0"
+                                    ToolTip="Uklanjanje odrađenih (štikliranih) zadataka" Width="30" Padding="2 0 0 0"
                                     materialDesign:RippleAssist.IsCentered="True">
                                 <materialDesign:PackIcon Kind="CheckAll" Foreground="#E52D2D30" />
                             </Button>
@@ -90,7 +90,7 @@
                 <materialDesign:DrawerHost.LeftDrawerContent>
                     <StackPanel Margin="16">
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
-                                  ToolTip="Ova opcija zatvara trenutno otvoren meni"
+                                  ToolTip="Zatvaranje trenutnog menija"
                                   Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
                                   CommandParameter="{x:Static Dock.Left}"
                                   DockPanel.Dock="Top"
@@ -149,21 +149,21 @@
                         <materialDesign:ColorZone Padding="16" materialDesign:ShadowAssist.ShadowDepth="Depth3" Mode="Standard" DockPanel.Dock="Top">
                             <DockPanel Grid.RowSpan="2" Grid.ColumnSpan="9">
                                 <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False"
-                                  ToolTip="Ova opcija nudi mogućnost odabira poslova"
+                                  ToolTip="Odabir poslova"
                                   x:Name="MenuToggleButton"
                                   Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
                                   CommandParameter="{x:Static Dock.Left}" />
                                 <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False" ToolTip="Više opcija">
                                     <StackPanel>
-                                        <Button x:Name="izgled" Content="Izgled" Click="izgled_Click" ToolTip="Opcija za promenu izgleda"/>
-                                        <Button x:Name="nalog" Content="Moj nalog" Click="nalog_Click" ToolTip="Opcija za podešavanje naloga trenutno ulogovanog korisnika"/>
+                                        <Button x:Name="izgled" Content="Izgled" Click="izgled_Click" ToolTip="Promena izgleda"/>
+                                        <Button x:Name="nalog" Content="Moj nalog" Click="nalog_Click" ToolTip="Podešavanje naloga trenutno ulogovanog korisnika"/>
                                         <Separator/>
-                                        <Button x:Name="dokumentacija" Content="Dokumentacija" Click="dokumentacija_Click" ToolTip="Dokumentacija o softveru"/>
-                                        <Button x:Name="about" Content="O programeru" Click="about_Click" ToolTip="Informacije o programeru"/>
+                                        <Button x:Name="dokumentacija" Content="Pomoć" Click="dokumentacija_Click" ToolTip="Dokumentacija o softveru"/>
+                                        <Button x:Name="about" Content="O programu" Click="about_Click" ToolTip="Informacije o programu"/>
                                         <Separator/>
-                                        <Button x:Name="logout" Content="Log out" Click="logout_Click" ToolTip="Opcija za logout trenutnog korisnika"/>
+                                        <Button x:Name="logout" Content="Odjavljivanje" Click="logout_Click" ToolTip="Odjavljivanje trenutnog korisnika iz programa i povratak na meni za prijavljivanje"/>
                                         <Separator/>
-                                        <Button x:Name="exit" Content="Zatvori program" Click="exit_Click" ToolTip="Opcija za napuštanje iz programa"/>
+                                        <Button x:Name="exit" Content="Zatvori program" Click="exit_Click" ToolTip="Napuštanje iz programa"/>
                                     </StackPanel>
                                 </materialDesign:PopupBox>
                                 <TextBlock x:Name="header" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Informacioni sistem Univerziteta Educons</TextBlock>

@@ -31,7 +31,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="yes" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Height="50" Width="110" Margin="25,20,26,10" Grid.Row="1" Background="#FF2D2D30" Click="yes_Click"  >
+        <Button x:Name="yes" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Height="50" Width="110" Margin="25,20,26,10" Grid.Row="1" Background="#FF2D2D30" Click="yes_Click"  ToolTip="Zatvori program">
             <StackPanel Orientation="Horizontal" Width="90">
                 <materialDesign:PackIcon Kind="Check" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"></materialDesign:PackIcon>
                 <TextBlock Text=" Da" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
@@ -39,7 +39,7 @@
 
         </Button>
         <Button x:Name="no" Style="{DynamicResource MaterialDesignRaisedDarkButton}" BorderThickness="0" Height="50" Width="110" Margin="25,25,25,15" Grid.Row="1" Background="#FF2D2D30" Grid.Column="1" 
-                
+                ToolTip="Zatvori trenutno otvoren prozor"
                 Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
                 CommandParameter="Sample2Cancel"
                 
