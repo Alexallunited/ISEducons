@@ -181,7 +181,7 @@ namespace ISEducons
                 myThread.Suspend();
             }
 
-            this.Close();
+            this.Close(); 
         }
     }
 }
