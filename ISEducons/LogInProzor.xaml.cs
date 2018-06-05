@@ -71,33 +71,6 @@ namespace ISEducons
             //    }
             //}
 
-
-
-            /*
-            if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameA && PasswordBox.Password == ISEducons.Properties.Resources.PasswordA) //ovo bas i nije najsigurniji nacin da se cuva passworda al ajd sad
-            {
-                this.Hide();
-                PocetniProzor test = new PocetniProzor();
-                test.ShowDialog();
-            }
-            else
-            {
-                if(UsernameBox.Text == ISEducons.Properties.Resources.UsernameU && PasswordBox.Password == ISEducons.Properties.Resources.PasswordU)
-                {
-                    MessageBox.Show("Ovaj korisnik je u sistemu ali interfejs za njega je trenutno u razvoju");
-                }
-
-
-            else
-                {
-                    if ((UsernameBox.Text != ISEducons.Properties.Resources.UsernameA || UsernameBox.Text != ISEducons.Properties.Resources.UsernameU) 
-                        && 
-                       (PasswordBox.Password != ISEducons.Properties.Resources.PasswordA || PasswordBox.Password != ISEducons.Properties.Resources.PasswordU))
-                        MessageBox.Show("Niste uneli validno korisničko ime ili šifru");
-                }
-            }
-            */
-
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
