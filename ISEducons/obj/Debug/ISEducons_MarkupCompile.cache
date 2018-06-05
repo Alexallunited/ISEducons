@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\alexa\Desktop\ISEducons\ISEducons\App.xaml
-121635117676
+15-649653090
 
-191421685765
+22273797243
 271318284309
-exitDialog.xaml;exitScreen.xaml;home.xaml;InfoEkran.xaml;itSektor.xaml;Izgled.xaml;KorisnikNePostojiDialogxaml.xaml;KorisnikPostojiDialog.xaml;LogInProzor.xaml;MainWindow.xaml;NetworkScanner.xaml;PocetniProzor.xaml;
+exitDialog.xaml;exitScreen.xaml;home.xaml;InfoEkran.xaml;itSektor.xaml;Izgled.xaml;KorisnikNePostojiDialogxaml.xaml;KorisnikPostojiDialog.xaml;LogInProzor.xaml;MainWindow.xaml;NetworkScanner.xaml;NetworkScannerDialog.xaml;NetworkScannerValidacija.xaml;PocetniProzor.xaml;UIzradiDialog.xaml;
 
 False
 

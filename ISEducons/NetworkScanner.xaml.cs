@@ -23,6 +23,9 @@ using Microsoft.Win32;
 using System.IO;
 using System.Windows.Threading;
 
+using MaterialDesignColors;
+using MaterialDesignThemes.Wpf;
+
 namespace ISEducons
 {
     /// <summary>
@@ -137,7 +140,10 @@ namespace ISEducons
             
             if (boxIP.Text == string.Empty)
             {
-                MessageBox.Show("No IP address entered.", "Error");
+                //MessageBox.Show("No IP address entered.", "Error");
+                MainWindowDialogHost.DialogContent = new NetworkScannerValidacija(); //otvara UserControl exitDialog kao dialog
+                MainWindowDialogHost.IsOpen = true;
+
             }
             else
             {
@@ -176,12 +182,16 @@ namespace ISEducons
 
         private void exit_Click(object sender, RoutedEventArgs e)
         {
-            if (myThread.IsAlive == true)
-            {
-                myThread.Suspend();
-            }
+            //if (myThread.IsAlive == true)
+            //{
+            //    myThread.Suspend();
+            //}
+            //else
+            //{
+                this.Close();
+            //}
 
-            this.Close(); 
+            
         }
     }
 }

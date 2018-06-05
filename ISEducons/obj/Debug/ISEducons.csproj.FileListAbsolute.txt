@@ -261,3 +261,9 @@ C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.application
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.csproj.CopyComplete
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.exe
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons.pdb
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\NetworkScannerDialog.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\NetworkScannerValidacija.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\NetworkScannerDialog.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\NetworkScannerValidacija.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\UIzradiDialog.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\UIzradiDialog.baml

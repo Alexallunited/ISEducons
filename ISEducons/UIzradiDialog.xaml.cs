@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace ISEducons
 {
     /// <summary>
-    /// Interaction logic for KorisnikNePostojiDialog.xaml
+    /// Interaction logic for UIzradiDialog.xaml
     /// </summary>
-    public partial class KorisnikNePostojiDialog : UserControl
+    public partial class UIzradiDialog : UserControl
     {
-        public KorisnikNePostojiDialog()
+        public UIzradiDialog()
         {
             InitializeComponent();
-        }
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace ISEducons
 {
     /// <summary>
-    /// Interaction logic for KorisnikNePostojiDialog.xaml
+    /// Interaction logic for NetworkScannerValidacija.xaml
     /// </summary>
-    public partial class KorisnikNePostojiDialog : UserControl
+    public partial class NetworkScannerValidacija : UserControl
     {
-        public KorisnikNePostojiDialog()
+        public NetworkScannerValidacija()
         {
             InitializeComponent();
-        }
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

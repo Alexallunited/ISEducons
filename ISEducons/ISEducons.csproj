@@ -148,11 +148,20 @@
     <Compile Include="NetworkScanner.xaml.cs">
       <DependentUpon>NetworkScanner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NetworkScannerDialog.xaml.cs">
+      <DependentUpon>NetworkScannerDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkScannerValidacija.xaml.cs">
+      <DependentUpon>NetworkScannerValidacija.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PaletteSelectorViewModel.cs" />
     <Compile Include="PocetniProzor.xaml.cs">
       <DependentUpon>PocetniProzor.xaml</DependentUpon>
     </Compile>
     <Compile Include="ScanData.cs" />
+    <Compile Include="UIzradiDialog.xaml.cs">
+      <DependentUpon>UIzradiDialog.xaml</DependentUpon>
+    </Compile>
     <Page Include="exitDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -211,7 +220,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="NetworkScannerDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NetworkScannerValidacija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PocetniProzor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIzradiDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

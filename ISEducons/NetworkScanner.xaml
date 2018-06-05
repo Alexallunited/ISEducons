@@ -20,6 +20,7 @@
         
         mc:Ignorable="d"
         Title="NetworkScanner" Height="420" Width="420" WindowStyle="None" WindowStartupLocation="CenterScreen"   ResizeMode="NoResize" AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown" >
+    <materialDesign:DialogHost x:Name="MainWindowDialogHost" Identifier="RootDialog" SnackbarMessageQueue="{Binding ElementName=MainSnackbar, Path=MessageQueue}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="318*"/>
@@ -52,8 +53,8 @@
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="304" Margin="10,10,0,0" VerticalAlignment="Top" Width="400">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="IP" DisplayMemberBinding="{Binding Path=Ip }" Width="120" />
-                    <GridViewColumn Header="Hostname" DisplayMemberBinding="{Binding Path=Hostname}" Width="160" />
+                    <GridViewColumn Header="IP" DisplayMemberBinding="{Binding Path=Ip }" Width="115" />
+                    <GridViewColumn Header="Hostname" DisplayMemberBinding="{Binding Path=Hostname}" Width="155" />
                     <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=Status}" Width="90" />
                 </GridView>
             </ListView.View>
@@ -64,4 +65,5 @@
 
 
     </Grid>
+    </materialDesign:DialogHost>
 </Window>

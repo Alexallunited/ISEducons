@@ -59,17 +59,27 @@ namespace ISEducons
 
         private void nalog_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Ova mogućnost će biti dostupna tek u sledećoj verziji");
+            MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
+            MainWindowDialogHost.IsOpen = true;
+
+            //MessageBox.Show("Ova mogućnost će biti dostupna tek u sledećoj verziji");
         }
 
         private void dokumentacija_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("U izradi");
+            MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
+            MainWindowDialogHost.IsOpen = true;
+
+            //MessageBox.Show("U izradi");
         }
 
         private void about_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("U izradi");
+
+            MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
+            MainWindowDialogHost.IsOpen = true;
+
+            //MessageBox.Show("U izradi");
         }
 
         private void exit_Click(object sender, RoutedEventArgs e)

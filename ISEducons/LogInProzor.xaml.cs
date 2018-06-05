@@ -65,7 +65,7 @@ namespace ISEducons
             //            &&
             //           (PasswordBox.Password != ISEducons.Properties.Resources.PasswordA || PasswordBox.Password != ISEducons.Properties.Resources.PasswordU))
 
-            //            MainWindowDialogHost.DialogContent = new KorisnikNePostojiDialogxaml(); //otvara UserControl exitDialog kao dialog
+            //            MainWindowDialogHost.DialogContent = new KorisnikNePostojiDialog(); //otvara UserControl exitDialog kao dialog
             //            MainWindowDialogHost.IsOpen = true;
 
             //    }
