@@ -98,7 +98,8 @@ namespace ISEducons
                     catch
                     {
 
-                        // MessageBox.Show("Couldnt retrieve hostname for "+subnet+subnetn, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // catch blok je namerno ostavljen prazan zato sto ce sigurno da udje ovde vise puta tokom skeniranja
+                        // a nema potrebe da se bilo sta desava tako da ovo je nacin da se neki errori ignorisu
 
                     }
                 }
@@ -123,14 +124,13 @@ namespace ISEducons
             new Action(() => this.boxIP.IsEnabled = true));
             
 
+            int count = listView.Items.Count;
+            string countS = count.ToString();
+
             Application.Current.Dispatcher.BeginInvoke(
             DispatcherPriority.Background,
-            new Action(() => this.labelaStatus.Content = "Skeniranje završeno"));
+            new Action(() => this.labelaStatus.Content = "Pronađeno " + countS + " adresa" ));
             
-
-
-            int count = listView.Items.Count;
-            MessageBox.Show("Scanning done!\nFound " + count.ToString() + " hosts.", "Done");
         }
 
 

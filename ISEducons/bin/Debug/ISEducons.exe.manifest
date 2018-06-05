@@ -48,14 +48,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ISEducons.exe" size="1038296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ISEducons.exe" size="1036760">
       <assemblyIdentity name="ISEducons" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VsitUaF0O7/RqQqqFjYK1rRi0biMHlqkF5n87VsoEms=</dsig:DigestValue>
+        <dsig:DigestValue>rwRG4ykZh62cvOZXa2ZlUeD8V8cR69l5Ea6FUBPtXo4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
