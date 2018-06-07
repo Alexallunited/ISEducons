@@ -38,7 +38,7 @@
 
         </Button>
 
-        <Label FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="10,10,10,61" Grid.ColumnSpan="2" Content="   Vaš nalog je u sistemu &#xD;&#xA;   ali interfejs za njega je&#xD;&#xA;       trenutno u razvoju" Foreground="#DD000000" Grid.RowSpan="2"/>
+        <Label FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="10,10,10,61" Grid.ColumnSpan="2" Content="   Vaš nalog je u sistemu &#xA;     ali interfejs za vas je&#xA;       trenutno u razvoju" Foreground="#DD000000" Grid.RowSpan="2"/>
 
     </Grid>
 </UserControl>
