@@ -106,9 +106,26 @@
                         <Menu>
                             <MenuItem Header="Izveštaj" Width="210">
                                 <MenuItem.Icon>
-                                    <materialDesign:PackIcon Kind="File" />
+                                    <materialDesign:PackIcon Kind="FileOutline" />
+                                </MenuItem.Icon>
+
+                                <MenuItem Header="Otvori.."  >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="OpenInApp" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem Header="Sačuvaj kao.."  >
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="ContentSaveAll"  />
                                 </MenuItem.Icon>
                             </MenuItem>
+                                <MenuItem Header="Izađi"  >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="ExitToApp" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+
                         </Menu>
                         <Menu>
                             <MenuItem Header="Plan" Width="210">
@@ -117,13 +134,13 @@
                                 </MenuItem.Icon>
                             </MenuItem>
                         </Menu>
-                        <Menu>
+                        <Menu IsMainMenu="True">
                             <MenuItem Header="Tehničko održavanje">
                                 <MenuItem.Icon>
-                                    <materialDesign:PackIcon Kind="MenuDown" />
+                                    <materialDesign:PackIcon Kind="Wrench" />
                                 </MenuItem.Icon>
 
-                                <MenuItem Header="Skeniraj mrežu">
+                                <MenuItem Header="Skeniraj mrežu" Click="TestDugme_Click" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}">
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="AccessPointNetwork" />
                                     </MenuItem.Icon>
@@ -134,7 +151,7 @@
                                     </MenuItem.Icon>
                                 </MenuItem>
 
-                                <MenuItem Header="Upravljanje korisnicima">
+                                <MenuItem Header="Upravljanje korisnicima" Click="nalog_Click">
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="AccountMultiple" />
                                     </MenuItem.Icon>

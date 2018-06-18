@@ -27,8 +27,8 @@ namespace ISEducons
         public PocetniProzor()
         {
             InitializeComponent();
+            Izvestaj.Visibility = Visibility.Collapsed;
 
-          
             Task.Factory.StartNew(() =>
             {
                 Thread.Sleep(1500);
@@ -117,5 +117,6 @@ namespace ISEducons
             }
         }
 
+       
     }
 }
