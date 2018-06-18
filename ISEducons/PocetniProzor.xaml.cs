@@ -47,6 +47,13 @@ namespace ISEducons
             DragMove(); //omogucava da se prozor pomera tako sto se drzi levi klik na prozoru
         }
 
+        private void uizradi_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
+            MainWindowDialogHost.IsOpen = true;
+
+        }
+
         private void izgled_Click(object sender, RoutedEventArgs e)
         {
            
@@ -89,12 +96,13 @@ namespace ISEducons
             LogInProzor login = new LogInProzor();
             login.ShowDialog(); // Modalni prozor
         }
-
-        private void TestDugme_Click(object sender, RoutedEventArgs e)
+        
+        private void Skener_Click(object sender, RoutedEventArgs e)
         {
             NetworkScanner scan = new NetworkScanner();
             scan.Show(); //Nemodalni prozor
         }
+
 
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -117,6 +125,16 @@ namespace ISEducons
             }
         }
 
-       
+
+
+
+
+
+
+        private void TestDugme_Click(object sender, RoutedEventArgs e)
+        {
+            NetworkScanner scan = new NetworkScanner();
+            scan.Show(); //Nemodalni prozor
+        }
     }
 }

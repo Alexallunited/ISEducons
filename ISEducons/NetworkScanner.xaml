@@ -32,22 +32,22 @@
             <Label x:Name="labelaNaziv" Grid.Row="2" Margin="10,0,254,19">Status skeniranja:</Label>
 
             <ProgressBar x:Name="progressBar"
-            Height="5" Margin="10,28,10,10" Grid.Row="2" />
+            Height="Auto" Margin="10,29,119,10" Grid.Row="2" />
 
-            <Label x:Name="labelaStatus" Grid.Row="2" Margin="163,0,10,19" Content="Status skeniranja:"/>
+            <Label x:Name="labelaStatus" Grid.Row="2" Margin="153,0,20,19" Content="Status skeniranja:"/>
             <Label x:Name="labelaNaziv_Copy" Margin="10,10,308,294" Content="Podmreža:"/>
 
 
 
 
-            <Button x:Name="start" Margin="259,10,88,297" Height="Auto" Click="cmdScan_Click" ToolTip="Započni skeniranje mreže">
+            <Button x:Name="start" Margin="294,10,71,297" Height="Auto" Click="cmdScan_Click" ToolTip="Započni skeniranje mreže">
                 <materialDesign:PackIcon Kind="Play"  />
             </Button>
-            <Button x:Name="stop" Margin="337,10,10,297" Height="Auto" Click="cmdStop_Click" ToolTip="Zaustavi skeniranje mreže">
+            <Button x:Name="stop" Margin="355,10,10,297" Height="Auto" Click="cmdStop_Click" ToolTip="Zaustavi skeniranje mreže">
                 <materialDesign:PackIcon Kind="Stop"  />
             </Button>
             <TextBox x:Name="boxIP" Text="{Binding Path=Ip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-            materialDesign:HintAssist.Hint="Npr. 192.168.1" Margin="112,2,177,294" ToolTip="Unesi podmrežu"/>
+            materialDesign:HintAssist.Hint="Npr. 192.168.1" Margin="95,0,144,296" ToolTip="Unesi podmrežu"/>
 
 
             <ListView x:Name="listView" HorizontalAlignment="Left" Height="313" Margin="10,52,0,0" VerticalAlignment="Top" Width="400" Grid.RowSpan="2">
@@ -59,7 +59,7 @@
                     </GridView>
                 </ListView.View>
             </ListView>
-            <Button x:Name="exit" Margin="337,44,10,21" Height="Auto" Click="exit_Click" Grid.Row="1" Grid.RowSpan="2" ToolTip="Zatvori prozor">
+            <Button x:Name="exit" Margin="317,2,10,10" Height="Auto" Click="exit_Click" Grid.Row="2" ToolTip="Zatvori prozor">
                 Izlaz
             </Button>
 
