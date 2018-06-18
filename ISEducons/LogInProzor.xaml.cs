@@ -29,7 +29,7 @@ namespace ISEducons
             InitializeComponent();
         }
 
-        private void LogIn_Click(object sender, RoutedEventArgs e)
+        public void LogIn_Click(object sender, RoutedEventArgs e)
         {
 
 
@@ -76,6 +76,17 @@ namespace ISEducons
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(1);
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Test for Enter key.
+            if (e.Key == Key.Enter)
+            {
+                this.Hide();
+                PocetniProzor test = new PocetniProzor();
+                test.ShowDialog();
+            }
         }
     }
 }

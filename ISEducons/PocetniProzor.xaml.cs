@@ -92,13 +92,35 @@ namespace ISEducons
         {
             this.Close(); //zatvaranje pocetnog prozora
             LogInProzor login = new LogInProzor();
-            login.ShowDialog();
+            login.ShowDialog(); // Modalni prozor
         }
 
         private void TestDugme_Click(object sender, RoutedEventArgs e)
         {
             NetworkScanner scan = new NetworkScanner();
-            scan.ShowDialog();
+            scan.Show(); //Nemodalni prozor
         }
+
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F11)
+            {
+                new PaletteHelper().SetLightDark(false); //podesavanje na Light temu
+            }
+            else if (e.Key == Key.F12)
+            {
+                new PaletteHelper().SetLightDark(true);  //podesavanje na Dark temu
+            }
+            else if (e.Key == Key.F1) //KeyPress za HELP tj. dokumentaciju
+            {
+
+            }
+            else if (e.Key == Key.Escape) // Nisam siguran da mi je ovo potrebno al neka stoji za sada tu
+            {
+
+            }
+        }
+
     }
 }

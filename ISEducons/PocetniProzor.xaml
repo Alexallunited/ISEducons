@@ -13,7 +13,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
-        
+        KeyDown="Window_KeyDown"
         
         
         
