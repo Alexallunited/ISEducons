@@ -269,3 +269,5 @@ C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\UIzradiDialog.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\UIzradiDialog.baml
 C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ICSharpCode.AvalonEdit.dll
 C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Izvestaj.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Izvestaj.baml

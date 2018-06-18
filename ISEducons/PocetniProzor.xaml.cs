@@ -34,8 +34,6 @@ namespace ISEducons
                 Thread.Sleep(1500);
             }).ContinueWith(t =>
             {
-                //note you can use the message queue from any thread, but just for this here we 
-                //need to get the message queue from the snackbar, so need to be on the dispatcher
                 MainSnackbar.MessageQueue.Enqueue("                   Dobrodošli admin");
             }, TaskScheduler.FromCurrentSynchronizationContext());
 
@@ -61,16 +59,14 @@ namespace ISEducons
         {
             MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
             MainWindowDialogHost.IsOpen = true;
-
-            //MessageBox.Show("Ova mogućnost će biti dostupna tek u sledećoj verziji");
+            
         }
 
         private void dokumentacija_Click(object sender, RoutedEventArgs e)
         {
             MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
             MainWindowDialogHost.IsOpen = true;
-
-            //MessageBox.Show("U izradi");
+            
         }
 
         private void about_Click(object sender, RoutedEventArgs e)
@@ -78,8 +74,7 @@ namespace ISEducons
 
             MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
             MainWindowDialogHost.IsOpen = true;
-
-            //MessageBox.Show("U izradi");
+            
         }
 
         private void exit_Click(object sender, RoutedEventArgs e)
@@ -116,7 +111,7 @@ namespace ISEducons
             {
 
             }
-            else if (e.Key == Key.Escape) // Nisam siguran da mi je ovo potrebno al neka stoji za sada tu
+            else if (e.Key == Key.Escape) // Nisam siguran da mi je ovo potrebno al neka stoji za sada tu, mozda cu implementirati logout ili exit na ovo dugme
             {
 
             }

@@ -139,6 +139,9 @@
     <Compile Include="Izgled.xaml.cs">
       <DependentUpon>Izgled.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Izvestaj.xaml.cs">
+      <DependentUpon>Izvestaj.xaml</DependentUpon>
+    </Compile>
     <Compile Include="KorisnikNePostojiDialogxaml.xaml.cs">
       <DependentUpon>KorisnikNePostojiDialogxaml.xaml</DependentUpon>
     </Compile>
@@ -186,6 +189,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Izgled.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Izvestaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

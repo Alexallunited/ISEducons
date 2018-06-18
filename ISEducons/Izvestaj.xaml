@@ -1,0 +1,116 @@
+﻿<UserControl x:Class="ISEducons.Izvestaj"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISEducons"
+        mc:Ignorable="d"
+        
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+             
+             d:DesignHeight="450" d:DesignWidth="870">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="854*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ToolBarTray HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Row="0">
+            <ToolBar Style="{DynamicResource MaterialDesignToolBar}" ClipToBounds="False" Margin="10,0,-8,1">
+
+
+                <Button Command="IncreaseFontSize" ToolTip="Otvori novi dokument" >
+                    Fajl
+
+                </Button>
+                <Button ToolTip="sačuvaj dokument">
+                    <materialDesign:PackIcon Kind="ContentSave" />
+                </Button>
+                <Separator />
+                <Button Command="Cut" ToolTip="Iseci" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="ContentCut" />
+                </Button>
+                <Button Command="Copy" ToolTip="Kopiraj" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="ContentCopy" />
+                </Button>
+                <Button Command="Paste" ToolTip="Nalepi" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="ContentPaste" />
+                </Button>
+                <Separator/>
+
+                <Label Content="Veličina fonta:" VerticalAlignment="Center"/>
+                <ComboBox>
+                    <ComboBoxItem Content="10"/>
+                    <ComboBoxItem Content="11"/>
+                    <ComboBoxItem IsSelected="True" Content="12"/>
+                    <ComboBoxItem Content="14"/>
+                    <ComboBoxItem Content="16"/>
+                    <ComboBoxItem Content="18"/>
+                    <ComboBoxItem Content="20"/>
+                    <ComboBoxItem Content="22"/>
+                    <ComboBoxItem Content="24"/>
+                </ComboBox>
+                <Separator/>
+
+
+                <Button Command="AlignLeft" ToolTip="Proravnaj tekst sa leve strane" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatAlignLeft" />
+                </Button>
+                <Button Command="AlignCenter" ToolTip="Centriraj tekst" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatAlignCenter" />
+                </Button>
+                <Button Command="AlignRight" ToolTip="Proravnaj tekst sa desne strane" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatAlignRight" />
+                </Button>
+                <Button Command="AlignJustify" ToolTip="Proravnaj tekst sa obe strane" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatAlignJustify" />
+                </Button>
+                <Separator/>
+                <Button Command="ToggleBold" ToolTip="Podebljaj tekst" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatBold" />
+                </Button>
+                <Button Command="ToggleItalic" ToolTip="Iskosi tekst" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatItalic" />
+                </Button>
+                <Button Command="ToggleUnderline" ToolTip="Podvuci tekst" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatUnderline" />
+                </Button>
+                <Separator/>
+
+                
+                <Button Command="Undo" ToolTip="Podvuci tekst" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="Undo" />
+                </Button>
+                <Button Command="Redo" ToolTip="Podvuci tekst" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="Redo" />
+                </Button>
+                <Separator/>
+                <Button Command="ToggleNumbering" ToolTip="Dodaj brojeve" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatListNumbers" />
+                </Button>
+                <Button Command="ToggleBullets" ToolTip="Dodaj brojeve" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="FormatListBulleted" />
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+        <RichTextBox Grid.Column="0"  Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</UserControl>

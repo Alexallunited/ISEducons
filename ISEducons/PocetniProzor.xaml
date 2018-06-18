@@ -21,7 +21,7 @@
         
         xmlns:local="clr-namespace:ISEducons"
         mc:Ignorable="d"
-        Title="PocetniProzor" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800"  ResizeMode="CanResizeWithGrip" AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown"  >
+        Title="PocetniProzor" Height="480" Width="870" WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800"  ResizeMode="CanResizeWithGrip" AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown"  >
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
@@ -30,34 +30,40 @@
 
     <materialDesign:DialogHost x:Name="MainWindowDialogHost" Identifier="RootDialog" SnackbarMessageQueue="{Binding ElementName=MainSnackbar, Path=MessageQueue}">
         <Grid Background="#FFF0F0F0" MinWidth="800" MinHeight="450" Margin="0,0,0,-1" >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="12*"/>
-            <RowDefinition Height="35*"/>
-            <RowDefinition Height="172"/>
-            <RowDefinition Height="25"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="174*"/>
-            <ColumnDefinition Width="425*"/>
-            <ColumnDefinition Width="201*"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition/>
+                <RowDefinition Height="172"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="174*"/>
+                <ColumnDefinition Width="425*"/>
+                <ColumnDefinition Width="201*"/>
 
-        </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
 
-        <Grid Grid.Column="0" Grid.Row="2">
+            <Grid Grid.Column="0" Grid.Row="2">
                 <Button x:Name="TestDugme" Click="TestDugme_Click" ToolTip="Test dugme OČEKIVANO ZAR NE?">
-                TEST DUGME
-            </Button>
-            
-        </Grid>
+                    TEST DUGME
+                </Button>
 
-        <Grid Grid.Column="1" Grid.Row="3" >
-            <materialDesign:Snackbar
+            </Grid>
+
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                <local:Izvestaj HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+            </Grid>
+
+            <Grid Grid.Column="1" Grid.Row="3" >
+                <materialDesign:Snackbar
             MessageQueue="{materialDesign:MessageQueue}"
             x:Name="SnackbarThree" />
-        </Grid>
+            </Grid>
 
 
-        <Grid Grid.Column="1" Grid.Row="2" >
+            <Grid Grid.Column="1" Grid.Row="2" >
                 <materialDesign:Card Background="#FFFDBCAE"
                       Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                       Padding="1">
@@ -68,13 +74,13 @@
                         <CheckBox Margin="16,4,0,0" Style="{StaticResource MaterialDesignUserForegroundCheckBox}" HorizontalAlignment="Left" Width="393" Foreground="#FF2D2D30" VerticalAlignment="Stretch">Programerima treba više sunca</CheckBox>
                         <Separator Style="{StaticResource MaterialDesignDarkSeparator}" Background="#33000000" />
                         <StackPanel Margin="8 0 8 8" Orientation="Horizontal" HorizontalAlignment="Right">
-                            
+
                             <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
                                     ToolTip="Dodavanje novih zadataka na TO DO lstu" Width="30" Padding="2 0 0 0"
                                     materialDesign:RippleAssist.IsCentered="True">
                                 <materialDesign:PackIcon Kind="Plus" Foreground="#E52D2D30" />
                             </Button>
-                            
+
                             <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
                                     ToolTip="Uklanjanje odrađenih (štikliranih) zadataka" Width="30" Padding="2 0 0 0"
                                     materialDesign:RippleAssist.IsCentered="True">
@@ -82,10 +88,10 @@
                             </Button>
                         </StackPanel>
                     </StackPanel>
-            </materialDesign:Card>
-        </Grid>
+                </materialDesign:Card>
+            </Grid>
 
-       
+
             <materialDesign:DrawerHost HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}" Grid.ColumnSpan="3"  Margin="-6,-6,-3,-2" Grid.RowSpan="4">
                 <materialDesign:DrawerHost.LeftDrawerContent>
                     <StackPanel Margin="16">
@@ -105,11 +111,11 @@
                             </MenuItem>
                         </Menu>
                         <Menu>
-                        <MenuItem Header="Plan" Width="210">
-                            <MenuItem.Icon>
-                                <materialDesign:PackIcon Kind="FileOutline" />
-                            </MenuItem.Icon>
-                        </MenuItem>
+                            <MenuItem Header="Plan" Width="210">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="FileOutline" />
+                                </MenuItem.Icon>
+                            </MenuItem>
                         </Menu>
                         <Menu>
                             <MenuItem Header="Tehničko održavanje">
@@ -181,7 +187,7 @@
             </materialDesign:DrawerHost>
 
 
-        
+
 
 
         </Grid>
