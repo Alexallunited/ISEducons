@@ -1,0 +1,191 @@
+﻿<UserControl x:Class="ISEducons.Racunari26"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISEducons"
+        mc:Ignorable="d"
+        
+             
+             
+             xmlns:Fluent="urn:fluent-ribbon"
+             xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             
+             
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+             
+             d:DesignHeight="450" d:DesignWidth="870">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.7*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="racunar21" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="1" Grid.Row="5" ToolTip="Računar 2.1" Height="Auto" Margin="0,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  2.1" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar22" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="2" Grid.Row="5" ToolTip="Računar 2.2" Height="Auto" Margin="10,1,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  2.2" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar31" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="1" Grid.Row="4" ToolTip="Računar 3.1" Height="Auto" Margin="0,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  3.1" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar32" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="2" Grid.Row="4" ToolTip="Računar 3.2" Height="Auto" Margin="10,0,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  3.2" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar41" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="1" Grid.Row="3" ToolTip="Računar 4.1" Height="Auto" Margin="0,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  4.1" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar42" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="2" Grid.Row="3" ToolTip="Računar 4.2" Height="Auto" Margin="10,0,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  4.2" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar51" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="1" Grid.Row="2" ToolTip="Računar 5.1" Height="Auto" Margin="0,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  5.1" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar52" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="2" Grid.Row="2" ToolTip="Računar 5.2" Height="Auto" Margin="10,0,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  5.2" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar23" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="4" Grid.Row="5" ToolTip="Računar 2.3" Height="Auto" Margin="1,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  2.3" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar24" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="5" Grid.Row="5" ToolTip="Računar 2.4" Height="Auto" Margin="10,1,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  2.4" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar33" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="4" Grid.Row="4" ToolTip="Računar 3.3" Height="Auto" Margin="1,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  3.3" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar34" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="5" Grid.Row="4" ToolTip="Računar 3.4" Height="Auto" Margin="10,1,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  3.4" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar43" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="4" Grid.Row="3" ToolTip="Računar 4.3" Height="Auto" Margin="1,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  4.3" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar44" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="5" Grid.Row="3" ToolTip="Računar 4.4" Height="Auto" Margin="10,1,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  4.4" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunarp1" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="4" Grid.Row="1" ToolTip="Računar predavač 2" Height="Auto" Margin="1,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="   P1" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunarp2" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="5" Grid.Row="1" ToolTip="Računar Predavač 2" Height="Auto" Margin="10,0,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="   P2" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar11_Copy" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="1" Grid.Row="6" ToolTip="Računar 1.1" Height="Auto" Margin="0,0,10,4">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  1.1" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar12" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="2" Grid.Row="6" ToolTip="Računar 1.2" Height="Auto" Margin="10,0,0,4">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  1.2" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar61" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="1" Grid.Row="1" ToolTip="Računar 6.1" Height="Auto" Margin="0,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  6.1" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar62" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="2" Grid.Row="1" ToolTip="Računar 6.2" Height="Auto" Margin="10,0,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  6.2" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar54" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="5" Grid.Row="2" ToolTip="Računar 5.4" Height="Auto" Margin="10,0,0,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  5.4" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="racunar53" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Column="4" Grid.Row="2" ToolTip="Računar 5.3" Height="Auto" Margin="1,0,10,5">
+            <StackPanel Orientation="Horizontal" Width="90">
+                <materialDesign:PackIcon Kind="DesktopClassic" Width="39"   HorizontalAlignment="Left" Foreground="#FFf0f0f0" Height="39"/>
+                <TextBlock Text="  5.3" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="40"/>
+            </StackPanel>
+        </Button>
+
+
+
+    </Grid>
+</UserControl>

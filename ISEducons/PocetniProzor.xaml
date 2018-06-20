@@ -56,6 +56,12 @@
 
             </Grid>
 
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                <local:Racunari26 x:Name="Ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+            </Grid>
+
             <Grid Grid.Column="1" Grid.Row="3" >
                 <materialDesign:Snackbar
             MessageQueue="{materialDesign:MessageQueue}"
@@ -146,6 +152,9 @@
                                     </MenuItem.Icon>
                                 </MenuItem>
                                 <MenuItem Header="Info o računarima" Click="uizradi_Click">
+                                    <MenuItem Header="Ucionica 26"></MenuItem>
+                                    <MenuItem Header="Ucionica 29"></MenuItem>
+                                    <MenuItem Header="Ucionica 10"></MenuItem>
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="DesktopClassic"  />
                                     </MenuItem.Icon>

@@ -277,3 +277,7 @@ C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\System.Windows.Interactivit
 C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ControlzEx.pdb
 C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Fluent.pdb
 C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Fluent.xml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari26.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari29.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari26.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari29.baml
