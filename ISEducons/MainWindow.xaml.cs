@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -26,6 +27,8 @@ namespace ISEducons
             InitializeComponent();
             itSektorScreen.Visibility = Visibility.Collapsed;
             //Thread.Sleep(1500);    //Usporava paljenje programa zbog SplashScreen-a
+            
+
         }
 
         private void Home_Copy12_Click(object sender, RoutedEventArgs e)

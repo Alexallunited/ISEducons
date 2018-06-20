@@ -8,14 +8,17 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+
+//using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 using MaterialDesignColors;
 using MaterialDesignThemes.Wpf;
-
+using Microsoft.Win32;
 
 namespace ISEducons
 {
@@ -28,6 +31,7 @@ namespace ISEducons
         {
             InitializeComponent();
             Izvestaj.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
 
             IzvestajSave.IsEnabled = false;
             IzvestajExit.IsEnabled = false;
@@ -108,7 +112,7 @@ namespace ISEducons
 
 
 
-        private void Window_KeyDown(object sender, KeyEventArgs e)
+        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Key == Key.F11)
             {
@@ -153,5 +157,32 @@ namespace ISEducons
             IzvestajSave.IsEnabled = true;
             IzvestajExit.IsEnabled = true;
         }
+
+        private void Save_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            dlg.Filter = "Rich Text Format (*.rtf)|*.rtf|All files (*.*)|*.*";
+            if (dlg.ShowDialog() == true)
+            {
+                FileStream fileStream = new FileStream(dlg.FileName, FileMode.Create);
+                TextRange range = new TextRange(Izvestaj.editor.Document.ContentStart, Izvestaj.editor.Document.ContentEnd);
+                range.Save(fileStream, DataFormats.Rtf);
+            }
+        }
+
+        private void Open_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Rich Text Format (*.rtf)|*.rtf|All files (*.*)|*.*";
+            if (dlg.ShowDialog() == true)
+            {
+                FileStream fileStream = new FileStream(dlg.FileName, FileMode.Open);
+                TextRange range = new TextRange(Izvestaj.editor.Document.ContentStart, Izvestaj.editor.Document.ContentEnd);
+                range.Load(fileStream, DataFormats.Rtf);
+            }
+        }
+
+
+
     }
 }

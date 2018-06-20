@@ -23,6 +23,12 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
              
              d:DesignHeight="450" d:DesignWidth="870">
+
+    <UserControl.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed" />
+    </UserControl.CommandBindings>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -41,7 +47,7 @@
                     Fajl
 
                 </Button>
-                <Button ToolTip="sačuvaj dokument">
+                <Button ToolTip="sačuvaj dokument" Command="ApplicationCommands.Save">
                     <materialDesign:PackIcon Kind="ContentSave" />
                 </Button>
                 <Separator />
@@ -106,7 +112,7 @@
                 </Button>
             </ToolBar>
         </ToolBarTray>
-        <RichTextBox Grid.Column="0"  Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontFamily="Roboto" FontSize="13">
+        <RichTextBox x:Name="editor" Grid.Column="0"  Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontFamily="Roboto" FontSize="13">
             <RichTextBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Iseci" InputGestureText="Ctrl+X" Command="Cut">

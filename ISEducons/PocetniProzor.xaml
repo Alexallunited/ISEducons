@@ -25,7 +25,10 @@
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
-
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed" />
+    </Window.CommandBindings>
 
 
     <materialDesign:DialogHost x:Name="MainWindowDialogHost" Identifier="RootDialog" SnackbarMessageQueue="{Binding ElementName=MainSnackbar, Path=MessageQueue}">
@@ -58,7 +61,7 @@
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Racunari26 x:Name="Ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <local:Racunari26 x:Name="Racunari26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
             </Grid>
 
@@ -115,12 +118,12 @@
                                     <materialDesign:PackIcon Kind="FileOutline" />
                                 </MenuItem.Icon>
 
-                                <MenuItem x:Name="IzvestajOpen" Header="Otvori.." Click="IzvestajOpen_Click"  >
+                                <MenuItem x:Name="IzvestajOpen" Header="Otvori.." Click="IzvestajOpen_Click" Command="ApplicationCommands.Open" >
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="OpenInApp" />
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem x:Name="IzvestajSave" Header="Sačuvaj kao.."  >
+                                <MenuItem x:Name="IzvestajSave" Header="Sačuvaj kao.." Command="ApplicationCommands.Save" >
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="ContentSaveAll"  />
                                 </MenuItem.Icon>
