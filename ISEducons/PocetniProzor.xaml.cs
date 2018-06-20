@@ -27,7 +27,7 @@ namespace ISEducons
         public PocetniProzor()
         {
             InitializeComponent();
-            Izvestaj.Visibility = Visibility.Collapsed;
+            Izvestaj.Visibility = Visibility.Visible;
 
             Task.Factory.StartNew(() =>
             {

@@ -271,3 +271,9 @@ C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ICSharpCode.AvalonEdit.dll
 C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ICSharpCode.AvalonEdit.xml
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Izvestaj.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Izvestaj.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ControlzEx.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Fluent.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\ControlzEx.pdb
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Fluent.pdb
+C:\Users\alexa\Desktop\ISEducons\ISEducons\bin\Debug\Fluent.xml

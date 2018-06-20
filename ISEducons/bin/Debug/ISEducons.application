@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ISEducons.exe.manifest" size="18996">
+    <dependentAssembly dependencyType="install" codebase="ISEducons.exe.manifest" size="20976">
       <assemblyIdentity name="ISEducons.exe" version="2.4.5.22" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>U0f2qldA2AxrIlQF4tns7JXA5f7mGRP4Ne7EkIdMsEQ=</dsig:DigestValue>
+        <dsig:DigestValue>ZcSzreTv2IA8cxS/CLLJ1PkMSEWmQcGq7TWNJyOS0L8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -34,7 +34,7 @@
             <ProgressBar x:Name="progressBar"
             Height="Auto" Margin="10,29,119,10" Grid.Row="2" />
 
-            <Label x:Name="labelaStatus" Grid.Row="2" Margin="153,0,20,19" Content="Status skeniranja:"/>
+            <Label x:Name="labelaStatus" Grid.Row="2" Margin="148,0,25,19" Content="Status skeniranja:"/>
             <Label x:Name="labelaNaziv_Copy" Margin="10,10,308,294" Content="Podmreža:"/>
 
 
