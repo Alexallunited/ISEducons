@@ -46,7 +46,7 @@
             <Button x:Name="stop" Margin="355,10,10,297" Height="Auto" Click="cmdStop_Click" ToolTip="Zaustavi skeniranje mreže">
                 <materialDesign:PackIcon Kind="Stop"  />
             </Button>
-            <TextBox x:Name="boxIP" Text="{Binding Path=Ip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            <TextBox x:Name="boxIP" Text="{Binding Path=Ip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" PreviewTextInput="boxIP_PreviewTextInput"
             materialDesign:HintAssist.Hint="Npr. 192.168.1" Margin="95,0,144,296" ToolTip="Unesi podmrežu"/>
 
 

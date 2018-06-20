@@ -25,6 +25,7 @@ using System.Windows.Threading;
 
 using MaterialDesignColors;
 using MaterialDesignThemes.Wpf;
+using System.Text.RegularExpressions;
 
 namespace ISEducons
 {
@@ -192,6 +193,11 @@ namespace ISEducons
             //}
 
             
+        }
+
+        private void boxIP_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = Regex.IsMatch(e.Text, "[^0-9.]+");
         }
     }
 }

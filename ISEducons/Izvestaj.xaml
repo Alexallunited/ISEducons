@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:ISEducons"
         mc:Ignorable="d"
         
+             
+             
+             xmlns:Fluent="urn:fluent-ribbon"
+             xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             
+             
         
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -28,7 +34,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <ToolBarTray HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Row="0">
-            <ToolBar Style="{DynamicResource MaterialDesignToolBar}" ClipToBounds="False" Margin="10,0,-8,1">
+            <ToolBar Style="{DynamicResource MaterialDesignToolBar}" ClipToBounds="False" Margin="10,0,-2,1">
 
 
                 <Button Command="IncreaseFontSize" ToolTip="Otvori novi dokument" >
@@ -51,17 +57,12 @@
                 <Separator/>
 
                 <Label Content="Veličina fonta:" VerticalAlignment="Center"/>
-                <ComboBox>
-                    <ComboBoxItem Content="10"/>
-                    <ComboBoxItem Content="11"/>
-                    <ComboBoxItem IsSelected="True" Content="12"/>
-                    <ComboBoxItem Content="14"/>
-                    <ComboBoxItem Content="16"/>
-                    <ComboBoxItem Content="18"/>
-                    <ComboBoxItem Content="20"/>
-                    <ComboBoxItem Content="22"/>
-                    <ComboBoxItem Content="24"/>
-                </ComboBox>
+                <Button Command="IncreaseFontSize" ToolTip="Povećaj font" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="ArrowUpBoldBoxOutline" />
+                </Button>
+                <Button Command="DecreaseFontSize" ToolTip="Smanji font" ToolBar.OverflowMode="AsNeeded">
+                    <materialDesign:PackIcon Kind="ArrowDownBoldBoxOutline" />
+                </Button>
                 <Separator/>
 
 
@@ -89,11 +90,11 @@
                 </Button>
                 <Separator/>
 
-                
-                <Button Command="Undo" ToolTip="Podvuci tekst" ToolBar.OverflowMode="AsNeeded">
+
+                <Button Command="Undo" ToolTip="Unazad" ToolBar.OverflowMode="AsNeeded">
                     <materialDesign:PackIcon Kind="Undo" />
                 </Button>
-                <Button Command="Redo" ToolTip="Podvuci tekst" ToolBar.OverflowMode="AsNeeded">
+                <Button Command="Redo" ToolTip="Unapred" ToolBar.OverflowMode="AsNeeded">
                     <materialDesign:PackIcon Kind="Redo" />
                 </Button>
                 <Separator/>
@@ -105,10 +106,28 @@
                 </Button>
             </ToolBar>
         </ToolBarTray>
-        <RichTextBox Grid.Column="0"  Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+        <RichTextBox Grid.Column="0"  Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontFamily="Roboto" FontSize="13">
+            <RichTextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Iseci" InputGestureText="Ctrl+X" Command="Cut">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentCut" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Kopiraj" InputGestureText="Ctrl+C" Command="Copy">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentCopy" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Nalepi" InputGestureText="Ctrl+V" Command="Paste">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="ContentPaste" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </RichTextBox.ContextMenu>
             <FlowDocument>
                 <Paragraph>
-                    <Run Text="RichTextBox"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>

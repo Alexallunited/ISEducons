@@ -38,7 +38,7 @@
 
         </Button>
 
-        <Label FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="27,30,30,68" Grid.ColumnSpan="2" Content="          Niste uneli  &#xA; IP adresu podmreže" Foreground="#DD000000" Grid.RowSpan="2"/>
+        <Label FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="28,30,28,68" Grid.ColumnSpan="2" Content="   Niste uneli validnu &#xA; IP adresu podmreže" Foreground="#DD000000" Grid.RowSpan="2"/>
 
     </Grid>
 </UserControl>

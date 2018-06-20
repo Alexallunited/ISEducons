@@ -27,7 +27,10 @@ namespace ISEducons
         public PocetniProzor()
         {
             InitializeComponent();
-            Izvestaj.Visibility = Visibility.Visible;
+            Izvestaj.Visibility = Visibility.Collapsed;
+
+            IzvestajSave.IsEnabled = false;
+            IzvestajExit.IsEnabled = false;
 
             Task.Factory.StartNew(() =>
             {
@@ -135,6 +138,20 @@ namespace ISEducons
         {
             NetworkScanner scan = new NetworkScanner();
             scan.Show(); //Nemodalni prozor
+        }
+
+        private void IzvestajExit_Click_1(object sender, RoutedEventArgs e)
+        {
+            Izvestaj.Visibility = Visibility.Collapsed;
+            IzvestajSave.IsEnabled = false;
+            IzvestajExit.IsEnabled = false;
+        }
+
+        private void IzvestajOpen_Click(object sender, RoutedEventArgs e)
+        {
+            Izvestaj.Visibility = Visibility.Visible;
+            IzvestajSave.IsEnabled = true;
+            IzvestajExit.IsEnabled = true;
         }
     }
 }

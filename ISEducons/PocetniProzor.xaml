@@ -109,17 +109,17 @@
                                     <materialDesign:PackIcon Kind="FileOutline" />
                                 </MenuItem.Icon>
 
-                                <MenuItem Header="Otvori.."  >
+                                <MenuItem x:Name="IzvestajOpen" Header="Otvori.." Click="IzvestajOpen_Click"  >
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="OpenInApp" />
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem Header="Sačuvaj kao.."  >
+                                <MenuItem x:Name="IzvestajSave" Header="Sačuvaj kao.."  >
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="ContentSaveAll"  />
                                 </MenuItem.Icon>
                             </MenuItem>
-                                <MenuItem x:Name="Exit" Header="Izađi"  >
+                                <MenuItem x:Name="IzvestajExit" Header="Izađi" Click="IzvestajExit_Click_1"  >
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="ExitToApp" />
                                     </MenuItem.Icon>
