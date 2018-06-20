@@ -25,37 +25,11 @@ namespace ISEducons
         public Izvestaj()
         {
             InitializeComponent();
+            cmbFontFamily.ItemsSource = Fonts.SystemFontFamilies.OrderBy(f => f.Source);
+            cmbFontSize.ItemsSource = new List<double>() { 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72 };
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
-        {
-            //TextRange t = new TextRange(richTextBox1.Document.ContentStart,
-            //                        richTextBox1.Document.ContentEnd);
-            //FileStream file = new FileStream("Sample File.xaml", FileMode.Create);
-            //t.Save(file, System.Windows.DataFormats.XamlPackage);
-            //file.Close();
-
-            //System.Windows.Forms.SaveFileDialog saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            //if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    using (Stream s = File.Open(saveFileDialog1.FileName, FileMode.CreateNew)) 
-            //    using (StreamWriter sw = new StreamWriter(s))
-            //    {
-            //        sw.Write(RichTextBox.Text);
-            //    }
-            //}
-
-
-            //SaveFileDialog saveFileDialog = new SaveFileDialog();
-            //if (saveFileDialog.ShowDialog() == true)
-            //{
-
-            //    File.WriteAllText(saveFileDialog.FileName, editor.Text);
-            //}
-
-
-
-        }
+        
         private void Save_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
@@ -80,6 +54,38 @@ namespace ISEducons
             }
         }
 
+        private void FontFamily_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbFontFamily.SelectedItem != null)
+                editor.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
+        }
 
+        private void FontSize_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            editor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
+        }
+
+        private void rtbEditor_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            object temp = editor.Selection.GetPropertyValue(Inline.FontWeightProperty);
+            temp = editor.Selection.GetPropertyValue(Inline.FontStyleProperty);
+            temp = editor.Selection.GetPropertyValue(Inline.TextDecorationsProperty);
+            
+
+            temp = editor.Selection.GetPropertyValue(Inline.FontFamilyProperty);
+            cmbFontFamily.SelectedItem = temp;
+            temp = editor.Selection.GetPropertyValue(Inline.FontSizeProperty);
+            cmbFontSize.Text = temp.ToString();
+        }
+        private void cmbFontFamily_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbFontFamily.SelectedItem != null)
+                editor.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
+        }
+
+        private void cmbFontSize_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            editor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
+        }
     }
 }

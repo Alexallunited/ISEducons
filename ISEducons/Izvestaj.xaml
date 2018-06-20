@@ -42,14 +42,11 @@
         <ToolBarTray HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Row="0">
             <ToolBar Style="{DynamicResource MaterialDesignToolBar}" ClipToBounds="False" Margin="10,0,-2,1">
 
-
-                <Button Command="IncreaseFontSize" ToolTip="Otvori novi dokument" >
-                    Fajl
-
-                </Button>
-                <Button ToolTip="sačuvaj dokument" Command="ApplicationCommands.Save">
-                    <materialDesign:PackIcon Kind="ContentSave" />
-                </Button>
+                <Label Content="Font:" VerticalAlignment="Center"/>
+                <ComboBox Name="cmbFontFamily" Width="150" SelectionChanged="cmbFontFamily_SelectionChanged" />
+                <Label Content="Veličina:" VerticalAlignment="Center"/>
+                <ComboBox Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged" />
+                
                 <Separator />
                 <Button Command="Cut" ToolTip="Iseci" ToolBar.OverflowMode="AsNeeded">
                     <materialDesign:PackIcon Kind="ContentCut" />
@@ -61,16 +58,6 @@
                     <materialDesign:PackIcon Kind="ContentPaste" />
                 </Button>
                 <Separator/>
-
-                <Label Content="Veličina fonta:" VerticalAlignment="Center"/>
-                <Button Command="IncreaseFontSize" ToolTip="Povećaj font" ToolBar.OverflowMode="AsNeeded">
-                    <materialDesign:PackIcon Kind="ArrowUpBoldBoxOutline" />
-                </Button>
-                <Button Command="DecreaseFontSize" ToolTip="Smanji font" ToolBar.OverflowMode="AsNeeded">
-                    <materialDesign:PackIcon Kind="ArrowDownBoldBoxOutline" />
-                </Button>
-                <Separator/>
-
 
                 <Button Command="AlignLeft" ToolTip="Proravnaj tekst sa leve strane" ToolBar.OverflowMode="AsNeeded">
                     <materialDesign:PackIcon Kind="FormatAlignLeft" />
@@ -85,13 +72,13 @@
                     <materialDesign:PackIcon Kind="FormatAlignJustify" />
                 </Button>
                 <Separator/>
-                <Button Command="ToggleBold" ToolTip="Podebljaj tekst" ToolBar.OverflowMode="AsNeeded">
+                <Button x:Name="bold" Command="ToggleBold" ToolTip="Podebljaj tekst" ToolBar.OverflowMode="AsNeeded">
                     <materialDesign:PackIcon Kind="FormatBold" />
                 </Button>
-                <Button Command="ToggleItalic" ToolTip="Iskosi tekst" ToolBar.OverflowMode="AsNeeded">
+                <Button x:Name="italic" Command="ToggleItalic" ToolTip="Iskosi tekst" ToolBar.OverflowMode="AsNeeded">
                     <materialDesign:PackIcon Kind="FormatItalic" />
                 </Button>
-                <Button Command="ToggleUnderline" ToolTip="Podvuci tekst" ToolBar.OverflowMode="AsNeeded">
+                <Button x:Name="underline" Command="ToggleUnderline" ToolTip="Podvuci tekst" ToolBar.OverflowMode="AsNeeded">
                     <materialDesign:PackIcon Kind="FormatUnderline" />
                 </Button>
                 <Separator/>
