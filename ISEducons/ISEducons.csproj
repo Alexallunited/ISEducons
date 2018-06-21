@@ -135,6 +135,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Add26.xaml.cs">
+      <DependentUpon>Add26.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AnotherCommandImplementation.cs" />
     <Compile Include="exitDialog.xaml.cs">
       <DependentUpon>exitDialog.xaml</DependentUpon>
@@ -196,6 +199,13 @@
     <Compile Include="UIzradiDialog.xaml.cs">
       <DependentUpon>UIzradiDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Update26.xaml.cs">
+      <DependentUpon>Update26.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Add26.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="exitDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -295,6 +305,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UIzradiDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update26.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

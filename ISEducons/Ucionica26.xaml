@@ -49,9 +49,9 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="0.17*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="buttonSave" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Računar 2.1" Height="Auto" Margin="10,10,135,10" Grid.Column="1" 
-                Click="buttonSave_Click">
-            Sačuvaj
+        <Button x:Name="buttonAdd" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Računar 2.1" Height="Auto" Margin="10,10,135,10" Grid.Column="1" 
+                Click="buttonAdd_Click">
+            Dodaj
         </Button>
 
         <DataGrid x:Name="DataGridPeople" 
@@ -70,15 +70,15 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTextColumn Header="CPU" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="GPU" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="RAM" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="MOBO" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="PSU" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Monitor" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Miš" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Tastatura" Width="*" Binding="{Binding Ime}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Komentar" Width="*" Binding="{Binding Prezime}"></DataGridTextColumn>
+                <DataGridTextColumn Header="CPU" Width="*" Binding="{Binding Cpu}"></DataGridTextColumn>
+                <DataGridTextColumn Header="GPU" Width="*" Binding="{Binding Gpu}"></DataGridTextColumn>
+                <DataGridTextColumn Header="RAM" Width="*" Binding="{Binding Ram}"></DataGridTextColumn>
+                <DataGridTextColumn Header="MOBO" Width="*" Binding="{Binding Mobo}"></DataGridTextColumn>
+                <DataGridTextColumn Header="PSU" Width="*" Binding="{Binding Psu}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Monitor" Width="*" Binding="{Binding Monitor}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Miš" Width="*" Binding="{Binding Mis}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Tastatura" Width="*" Binding="{Binding Tastatura}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Komentar" Width="*" Binding="{Binding Komentar}"></DataGridTextColumn>
 
             </DataGrid.Columns>
         </DataGrid>

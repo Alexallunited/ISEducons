@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,26 +13,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ISEducons
 {
     /// <summary>
-    /// Interaction logic for Ucionica26.xaml
+    /// Interaction logic for Add26.xaml
     /// </summary>
-    public partial class Ucionica26 : UserControl
+    public partial class Add26 : UserControl
     {
         List<Ucionica26Data> lista = new List<Ucionica26Data>();
 
-        public Ucionica26()
+        public Add26()
         {
             InitializeComponent();
 
-
-
             UcitajDatotekuResursa();
-
         }
 
         // SERIJALIZACIJA/DESERIJALIZACIJA IZ DATOTEKE
@@ -44,15 +40,23 @@ namespace ISEducons
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = null;
 
+            // TREBA IF ELSE, PROVERI DA LI RADI BEZ LISTA != NULL
+
+
+
+
             try
             {
-
+                // obsCol ima ugradjen konstuktor samo ubacim listu u njega
                 stream = File.Open(_ucionica26, FileMode.OpenOrCreate);
-                lista = null;
                 lista = (List<Ucionica26Data>)formatter.Deserialize(stream);
 
-                this.DataGridPeople.ItemsSource = lista;
+                Console.WriteLine(lista);
 
+                foreach (Ucionica26Data item in lista)
+                {
+                    Console.WriteLine(item.Cpu);
+                }
 
             }
             catch
@@ -74,6 +78,27 @@ namespace ISEducons
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = null;
 
+            Random number = new Random();
+
+            Ucionica26Data data26 = new Ucionica26Data();
+            data26.Id = boxID.Text;
+            data26.Cpu = boxCPU.Text;
+            data26.Gpu = boxGPU.Text;
+            data26.Ram = boxRAM.Text;
+            data26.Mobo = boxMaticna.Text;
+            data26.Psu = boxPSU.Text;
+            data26.Monitor = boxMonitor.Text;
+            data26.Mis = boxMis.Text;
+            data26.Tastatura = boxTastatura.Text;
+            data26.Komentar = boxKomentar.Text;
+
+            lista.Add(data26);
+
+            foreach (Ucionica26Data person in lista)
+            {
+                Console.WriteLine(person.Cpu);
+            }
+
             try
             {
 
@@ -93,43 +118,19 @@ namespace ISEducons
             }
         }
 
-        private void buttonAdd_Click(object sender, RoutedEventArgs e)
+        private void buttonOK_Click(object sender, RoutedEventArgs e)
         {
-            Add26 addWin = new Add26();
-            addWin.Visibility = Visibility.Visible;
-
-            UcitajDatotekuResursa();
-
-        }
-
-        private void buttonUpdate_Click(object sender, RoutedEventArgs e)
-        {
-
-
-            Update26 updWindow = new Update26(
-                lista[DataGridPeople.SelectedIndex].Id,
-                lista[DataGridPeople.SelectedIndex].Cpu,
-                lista[DataGridPeople.SelectedIndex].Gpu,
-                lista[DataGridPeople.SelectedIndex].Ram,
-                lista[DataGridPeople.SelectedIndex].Mobo,
-                lista[DataGridPeople.SelectedIndex].Psu,
-                lista[DataGridPeople.SelectedIndex].Monitor,
-                lista[DataGridPeople.SelectedIndex].Mis,
-                lista[DataGridPeople.SelectedIndex].Tastatura,
-                lista[DataGridPeople.SelectedIndex].Komentar);
-            updWindow.Visibility = Visibility.Visible;
-
-            UcitajDatotekuResursa();
-        }
-
-        private void buttonDelete_Click(object sender, RoutedEventArgs e)
-        {
-
-            lista.RemoveAt(DataGridPeople.SelectedIndex);
-
             MemorisiDatotekuResursa();
+            this.Visibility = Visibility.Collapsed;
+        }
 
-            UcitajDatotekuResursa();
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Collapsed;
+        }
+        private void boxIP_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = Regex.IsMatch(e.Text, "[^0-9.]+");
         }
     }
 }
