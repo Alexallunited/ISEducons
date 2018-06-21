@@ -26,8 +26,10 @@
         <DropShadowEffect/>
     </Window.Effect>
     <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed" />
-        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed" />
+        <CommandBinding Command="ApplicationCommands.Open" Executed="izvestaj_Open_Executed" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="izvestaj_Save_Executed" />
+        <CommandBinding Command="ApplicationCommands.Open" Executed="plan_Open_Executed" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="plan_Save_Executed" />
     </Window.CommandBindings>
 
 
@@ -46,12 +48,6 @@
 
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Column="0" Grid.Row="2">
-                <Button x:Name="TestDugme" Click="TestDugme_Click" ToolTip="Test dugme OČEKIVANO ZAR NE?">
-                    TEST DUGME
-                </Button>
-
-            </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
@@ -61,7 +57,26 @@
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
+                <local:Plan x:Name="Plan" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+            </Grid>
+
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
                 <local:Racunari26 x:Name="Racunari26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+            </Grid>
+
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                <local:Racunari29 x:Name="Racunari29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+            </Grid>
+
+
+            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                <local:Ucionica26 x:Name="ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
             </Grid>
 
@@ -101,7 +116,7 @@
             </Grid>
 
 
-            <materialDesign:DrawerHost HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}" Grid.ColumnSpan="3"  Margin="-6,-6,-3,-2" Grid.RowSpan="4">
+            <materialDesign:DrawerHost HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}" Grid.ColumnSpan="3"  Margin="-6,-6,-3,-2" Grid.RowSpan="4" >
                 <materialDesign:DrawerHost.LeftDrawerContent>
                     <StackPanel Margin="16">
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
@@ -111,24 +126,35 @@
                                   DockPanel.Dock="Top"
                                   HorizontalAlignment="Right" Margin="16"
                                   IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />
-                        <TextBlock Margin="4" HorizontalAlignment="Center">ODABIR POSLA</TextBlock>
+
+                        <Menu>
+                            <MenuItem Header="Početna" Width="210" Name="Home" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Click="Home_Click">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="Home" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </Menu>
                         <Menu>
                             <MenuItem Header="Izveštaj" Width="210">
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="FileOutline" />
                                 </MenuItem.Icon>
-
+                                <MenuItem x:Name="IzvestajNew" Header="Novi izveštaj" Click="IzvestajOpen_Click" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="FileDocument" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
                                 <MenuItem x:Name="IzvestajOpen" Header="Otvori.." Click="IzvestajOpen_Click" Command="ApplicationCommands.Open" >
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="OpenInApp" />
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem x:Name="IzvestajSave" Header="Sačuvaj kao.." Command="ApplicationCommands.Save" >
+                                <MenuItem x:Name="IzvestajSave" Header="Sačuvaj kao.." Command="ApplicationCommands.Save" x:FieldModifier="public" >
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="ContentSaveAll"  />
                                 </MenuItem.Icon>
                             </MenuItem>
-                                <MenuItem x:Name="IzvestajExit" Header="Izađi" Click="IzvestajExit_Click_1"  >
+                                <MenuItem x:Name="IzvestajExit" Header="Izađi" Click="IzvestajExit_Click_1"  Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}">
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="ExitToApp" />
                                     </MenuItem.Icon>
@@ -141,6 +167,26 @@
                                 <MenuItem.Icon>
                                     <materialDesign:PackIcon Kind="FileOutline" />
                                 </MenuItem.Icon>
+                                <MenuItem x:Name="PlanNew" Header="Novi plan" Click="PlanOpen_Click" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="FileDocument" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem x:Name="PlanOpen" Header="Otvori.." Click="PlanOpen_Click" Command="ApplicationCommands.Open" >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="OpenInApp" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem x:Name="PlanSave" Header="Sačuvaj kao.." Command="ApplicationCommands.Save" >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="ContentSaveAll"  />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem x:Name="PlanExit" Header="Izađi" Click="PlanExit_Click_1"  Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}">
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="ExitToApp" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
                             </MenuItem>
                         </Menu>
                         <Menu IsMainMenu="True">
@@ -154,10 +200,10 @@
                                         <materialDesign:PackIcon Kind="AccessPointNetwork" />
                                     </MenuItem.Icon>
                                 </MenuItem>
-                                <MenuItem Header="Info o računarima" Click="uizradi_Click">
-                                    <MenuItem Header="Ucionica 26"></MenuItem>
-                                    <MenuItem Header="Ucionica 29"></MenuItem>
-                                    <MenuItem Header="Ucionica 10"></MenuItem>
+                                <MenuItem Header="Info o računarima">
+                                    <MenuItem Name="Ucionica26" Header="Ucionica 26" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Click="Ucionica26_Click"></MenuItem>
+                                    <MenuItem Name="Ucionica29" Header="Ucionica 29" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Click="Ucionica29_Click"></MenuItem>
+                                    <MenuItem Name="Ucionica10" Header="Ucionica 10" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Click="Ucionica10_Click"></MenuItem>
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="DesktopClassic"  />
                                     </MenuItem.Icon>

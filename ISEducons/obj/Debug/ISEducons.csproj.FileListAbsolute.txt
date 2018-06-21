@@ -281,3 +281,11 @@ C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari26.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari29.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari26.baml
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Racunari29.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Plan.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Plan.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\SacuvajDialog.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\SacuvajDialog.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\HardwareInfo.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Ucionica26.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\HardwareInfo.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Ucionica26.baml

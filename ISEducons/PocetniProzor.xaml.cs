@@ -31,10 +31,16 @@ namespace ISEducons
         {
             InitializeComponent();
             Izvestaj.Visibility = Visibility.Collapsed;
+            Plan.Visibility = Visibility.Collapsed;
             Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+            ucionica26.Visibility = Visibility.Collapsed;
 
             IzvestajSave.IsEnabled = false;
             IzvestajExit.IsEnabled = false;
+
+            PlanSave.IsEnabled = false;
+            PlanExit.IsEnabled = false;
 
             Task.Factory.StartNew(() =>
             {
@@ -102,6 +108,8 @@ namespace ISEducons
             this.Close(); //zatvaranje pocetnog prozora
             LogInProzor login = new LogInProzor();
             login.ShowDialog(); // Modalni prozor
+            Izvestaj.editor.Document.Blocks.Clear();
+            Plan.editor2.Document.Blocks.Clear();
         }
         
         private void Skener_Click(object sender, RoutedEventArgs e)
@@ -149,6 +157,7 @@ namespace ISEducons
             Izvestaj.Visibility = Visibility.Collapsed;
             IzvestajSave.IsEnabled = false;
             IzvestajExit.IsEnabled = false;
+            Izvestaj.editor.Document.Blocks.Clear();
         }
 
         private void IzvestajOpen_Click(object sender, RoutedEventArgs e)
@@ -157,8 +166,25 @@ namespace ISEducons
             IzvestajSave.IsEnabled = true;
             IzvestajExit.IsEnabled = true;
         }
+        private void PlanExit_Click_1(object sender, RoutedEventArgs e)
+        {
+            Plan.Visibility = Visibility.Collapsed;
+            PlanSave.IsEnabled = false;
+            PlanExit.IsEnabled = false;
+            Plan.editor2.Document.Blocks.Clear();
+        }
 
-        private void Save_Executed(object sender, ExecutedRoutedEventArgs e)
+        private void PlanOpen_Click(object sender, RoutedEventArgs e)
+        {
+            Plan.Visibility = Visibility.Visible;
+            PlanSave.IsEnabled = true;
+            PlanExit.IsEnabled = true;
+        }
+
+        public delegate void TempDelegate();
+        public static event TempDelegate es;
+
+        public void izvestaj_Save_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
             dlg.Filter = "Rich Text Format (*.rtf)|*.rtf|All files (*.*)|*.*";
@@ -170,7 +196,7 @@ namespace ISEducons
             }
         }
 
-        private void Open_Executed(object sender, ExecutedRoutedEventArgs e)
+        private void izvestaj_Open_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.Filter = "Rich Text Format (*.rtf)|*.rtf|All files (*.*)|*.*";
@@ -181,8 +207,93 @@ namespace ISEducons
                 range.Load(fileStream, DataFormats.Rtf);
             }
         }
+        public void plan_Save_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+            dlg.Filter = "Rich Text Format (*.rtf)|*.rtf|All files (*.*)|*.*";
+            if (dlg.ShowDialog() == true)
+            {
+                FileStream fileStream = new FileStream(dlg.FileName, FileMode.Create);
+                TextRange range = new TextRange(Plan.editor2.Document.ContentStart, Plan.editor2.Document.ContentEnd);
+                range.Save(fileStream, DataFormats.Rtf);
+            }
+        }
+
+        private void plan_Open_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Rich Text Format (*.rtf)|*.rtf|All files (*.*)|*.*";
+            if (dlg.ShowDialog() == true)
+            {
+                FileStream fileStream = new FileStream(dlg.FileName, FileMode.Open);
+                TextRange range = new TextRange(Plan.editor2.Document.ContentStart, Plan.editor2.Document.ContentEnd);
+                range.Load(fileStream, DataFormats.Rtf);
+            }
+        }
+
+        private void Ucionica26_Click(object sender, RoutedEventArgs e)
+        {
+            ucionica26.Visibility = Visibility.Visible;
+
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Plan.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+
+            //Racunari26.Visibility = Visibility.Visible;
+
+            //Izvestaj.Visibility = Visibility.Collapsed;
+            //Plan.Visibility = Visibility.Collapsed;
+            //Racunari29.Visibility = Visibility.Collapsed;
+            ////Racunari10.Visibility = Visibility.Collapsed;
+        }
+
+        private void Ucionica29_Click(object sender, RoutedEventArgs e)
+        {
 
 
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Plan.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
 
+            //Racunari29.Visibility = Visibility.Visible;
+
+            //Izvestaj.Visibility = Visibility.Collapsed;
+            //Plan.Visibility = Visibility.Collapsed;
+            //Racunari26.Visibility = Visibility.Collapsed;
+            ////Racunari10.Visibility = Visibility.Collapsed;
+        }
+
+        private void Ucionica10_Click(object sender, RoutedEventArgs e)
+        {
+            //Racunari10.Visibility = Visibility.Visible;
+
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Plan.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            //Racunari10.Visibility = Visibility.Visible;
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Plan.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+            ucionica26.Visibility = Visibility.Collapsed;
+
+            //if (Izvestaj.editor.Document.Blocks.Count <= 1)
+            //{
+            //    MessageBox.Show("PRAZAN!!!!");
+            //}else
+            //{
+            //    MessageBox.Show("IMA NESTO!!!!");
+            //    MainWindowDialogHost.DialogContent = new SacuvajDialog(); 
+            //    MainWindowDialogHost.IsOpen = true;
+            //}
+
+        }
     }
 }

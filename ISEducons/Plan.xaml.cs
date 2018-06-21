@@ -19,31 +19,29 @@ using System.Windows.Shapes;
 namespace ISEducons
 {
     /// <summary>
-    /// Interaction logic for Izvestaj.xaml
+    /// Interaction logic for Plan.xaml
     /// </summary>
-    public partial class Izvestaj : UserControl
+    public partial class Plan : UserControl
     {
-        public Izvestaj()
+        public Plan()
         {
             InitializeComponent();
             cmbFontFamily.ItemsSource = Fonts.SystemFontFamilies.OrderBy(f => f.Source); //Uzima font iz SystemFontFamilies biblioteke
             cmbFontSize.ItemsSource = new List<double>() { 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72 };
         }
 
-        
-        public void Save_Executed(object sender, ExecutedRoutedEventArgs e) //Bez ovoga COMMAND Save u XAML-u nece da radi
+
+        private void Save_Executed(object sender, ExecutedRoutedEventArgs e) //Bez ovoga COMMAND Save u XAML-u nece da radi
         {
             SaveFileDialog dlg = new SaveFileDialog();
             dlg.Filter = "Rich Text Format (*.rtf)|*.rtf|All files (*.*)|*.*";
             if (dlg.ShowDialog() == true)
             {
                 FileStream fileStream = new FileStream(dlg.FileName, FileMode.Create);
-                TextRange range = new TextRange(editor.Document.ContentStart, editor.Document.ContentEnd);
+                TextRange range = new TextRange(editor2.Document.ContentStart, editor2.Document.ContentEnd);
                 range.Save(fileStream, DataFormats.Rtf);
             }
         }
-
-
 
         private void Open_Executed(object sender, ExecutedRoutedEventArgs e) //Bez ovoga COMMAND Open u XAML-u nece da radi
         {
@@ -52,7 +50,7 @@ namespace ISEducons
             if (dlg.ShowDialog() == true)
             {
                 FileStream fileStream = new FileStream(dlg.FileName, FileMode.Open);
-                TextRange range = new TextRange(editor.Document.ContentStart, editor.Document.ContentEnd);
+                TextRange range = new TextRange(editor2.Document.ContentStart, editor2.Document.ContentEnd);
                 range.Load(fileStream, DataFormats.Rtf);
             }
         }
@@ -60,41 +58,46 @@ namespace ISEducons
         private void FontFamily_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cmbFontFamily.SelectedItem != null)
-                editor.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
+                editor2.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
         }
 
         private void FontSize_TextChanged(object sender, TextChangedEventArgs e)
         {
-            editor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
+            editor2.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
         }
 
         private void rtbEditor_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            object temp = editor.Selection.GetPropertyValue(Inline.FontWeightProperty);
-            temp = editor.Selection.GetPropertyValue(Inline.FontStyleProperty);
-            temp = editor.Selection.GetPropertyValue(Inline.TextDecorationsProperty);
-            
+            object temp = editor2.Selection.GetPropertyValue(Inline.FontWeightProperty);
+            temp = editor2.Selection.GetPropertyValue(Inline.FontStyleProperty);
+            temp = editor2.Selection.GetPropertyValue(Inline.TextDecorationsProperty);
 
-            temp = editor.Selection.GetPropertyValue(Inline.FontFamilyProperty);
+
+            temp = editor2.Selection.GetPropertyValue(Inline.FontFamilyProperty);
             cmbFontFamily.SelectedItem = temp;
-            temp = editor.Selection.GetPropertyValue(Inline.FontSizeProperty);
+            temp = editor2.Selection.GetPropertyValue(Inline.FontSizeProperty);
             cmbFontSize.Text = temp.ToString();
         }
         private void cmbFontFamily_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cmbFontFamily.SelectedItem != null)
-                editor.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
+                editor2.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
         }
 
         private void cmbFontSize_TextChanged(object sender, TextChangedEventArgs e)
         {
-            editor.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
+            editor2.Selection.ApplyPropertyValue(Inline.FontSizeProperty, cmbFontSize.Text);
         }
 
         private void cmbFontSize_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            e.Handled = Regex.IsMatch(e.Text, "[^0-72]+");
+            e.Handled = Regex.IsMatch(e.Text, "[^0-9]+");
         }
 
+
+
+
     }
+
+
 }

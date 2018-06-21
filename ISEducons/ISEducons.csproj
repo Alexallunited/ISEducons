@@ -142,6 +142,9 @@
     <Compile Include="exitScreen.xaml.cs">
       <DependentUpon>exitScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HardwareInfo.xaml.cs">
+      <DependentUpon>HardwareInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InfoEkran.xaml.cs">
       <DependentUpon>InfoEkran.xaml</DependentUpon>
     </Compile>
@@ -170,6 +173,9 @@
       <DependentUpon>NetworkScannerValidacija.xaml</DependentUpon>
     </Compile>
     <Compile Include="PaletteSelectorViewModel.cs" />
+    <Compile Include="Plan.xaml.cs">
+      <DependentUpon>Plan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PocetniProzor.xaml.cs">
       <DependentUpon>PocetniProzor.xaml</DependentUpon>
     </Compile>
@@ -179,7 +185,14 @@
     <Compile Include="Racunari29.xaml.cs">
       <DependentUpon>Racunari29.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SacuvajDialog.xaml.cs">
+      <DependentUpon>SacuvajDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ScanData.cs" />
+    <Compile Include="Ucionica26.xaml.cs">
+      <DependentUpon>Ucionica26.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ucionica26Data.cs" />
     <Compile Include="UIzradiDialog.xaml.cs">
       <DependentUpon>UIzradiDialog.xaml</DependentUpon>
     </Compile>
@@ -188,6 +201,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="exitScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HardwareInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -253,6 +270,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Plan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PocetniProzor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -262,6 +283,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Racunari29.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SacuvajDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ucionica26.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -328,6 +357,10 @@
     <Resource Include="Icons\settings.png" />
     <Resource Include="Icons\settings2.png" />
     <Resource Include="Icons\usa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ucionica26\" />
+    <Folder Include="Ucionica29\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
