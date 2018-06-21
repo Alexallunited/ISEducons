@@ -22,12 +22,9 @@ namespace ISEducons
     /// </summary>
     public partial class Update26 : UserControl
     {
-        public Update26()
-        {
-            InitializeComponent();
-        }
 
-        string id;
+       
+        private string id;
         string cpu;
         string gpu;
         string ram;
@@ -38,22 +35,43 @@ namespace ISEducons
         string tastatura;
         string komentar;
 
+        public Update26()
+        {
+            InitializeComponent();
+        }
+
         List<Ucionica26Data> lista = new List<Ucionica26Data>();
 
         
-            public Update26(string Id, string Cpu, string Gpu, string Ram, string Mobo, string Psu, string Monitor, string Mis, string Tastatura, string Komentar)
-        {
-            this.id = Id;
-            this.cpu = Cpu;
-            this.gpu = Gpu;
-            this.ram = Ram;
-            this.mobo = Mobo;
-            this.psu = Psu;
-            this.monitor = Monitor;
-            this.mis = Mis;
-            this.tastatura = Tastatura;
-            this.komentar = Komentar;
-        }
+            public Update26(string id, string cpu, string gpu, string ram, string mobo, string psu, string monitor, string mis, string tastatura, string komentar)
+            {
+
+            InitializeComponent();
+
+                this.id = id;
+                this.cpu = cpu;
+                this.gpu = gpu;
+                this.ram = ram;
+                this.mobo = mobo;
+                this.psu = psu;
+                this.monitor = monitor;
+                this.mis = mis;
+                this.tastatura = tastatura;
+                this.komentar = komentar;
+
+                this.boxID.Text = id;
+                this.boxCPU.Text = cpu;
+                this.boxGPU.Text = gpu;
+                this.boxRAM.Text = ram;
+                this.boxMaticna.Text = mobo;
+                this.boxPSU.Text = psu;
+                this.boxMonitor.Text = monitor;
+                this.boxMis.Text = mis;
+                this.boxTastatura.Text = tastatura;
+                this.boxKomentar.Text = komentar;
+
+                UcitajDatotekuResursa();
+            }
 
         
 
@@ -81,7 +99,7 @@ namespace ISEducons
 
                 foreach (Ucionica26Data item in lista)
                 {
-                    Console.WriteLine(item.Cpu);
+                    Console.WriteLine(item.Id);
                 }
 
             }
@@ -146,12 +164,30 @@ namespace ISEducons
         private void buttonOK_Click(object sender, RoutedEventArgs e)
         {
             MemorisiDatotekuResursa();
-            this.Visibility = Visibility.Collapsed;
+            UcitajDatotekuResursa();
+            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
+            if (pocetniProzor != null)
+            {
+                UcitajDatotekuResursa();
+                pocetniProzor.ucionica26.Visibility = Visibility.Visible;
+                this.Visibility = Visibility.Collapsed;
+                UcitajDatotekuResursa();
+            }
+            
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Collapsed;
+            UcitajDatotekuResursa();
+            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
+            if (pocetniProzor != null)
+            {
+                UcitajDatotekuResursa();
+                pocetniProzor.ucionica26.Visibility = Visibility.Visible;
+                this.Visibility = Visibility.Collapsed;
+                UcitajDatotekuResursa();
+            }
         }
         //private void boxIP_PreviewTextInput(object sender, TextCompositionEventArgs e)
         //{

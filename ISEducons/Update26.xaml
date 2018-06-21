@@ -53,11 +53,11 @@
             <ColumnDefinition Width="0.6*"/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="buttonOK" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Računar 2.1" Height="Auto" Margin="10,0,0,4" Grid.Column="1" 
+        <Button x:Name="buttonOK" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Sačuvaj izmene" Height="Auto" Margin="10,0,0,4" Grid.Column="1" 
                Click="buttonOK_Click">
-            Sačuvaj
+            Izmeni
         </Button>
-        <Button x:Name="cancelButton" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Računar 2.1" Height="Auto" Margin="0,0,10,4" Grid.Column="5" 
+        <Button x:Name="cancelButton" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Odustani od izmena" Height="Auto" Margin="0,0,10,4" Grid.Column="5" 
                 Click="cancelButton_Click">
             Odustani
         </Button>
@@ -65,7 +65,7 @@
         <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="1">CPU:</Label>
         <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="2">GPU:</Label>
         <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="3">RAM:</Label>
-        <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="4">PSU:</Label>
+        <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="4" VerticalAlignment="Center">PSU:</Label>
 
         <Label Grid.Column="4" Margin="56,16,43,15" Grid.Row="1">Matična:</Label>
         <Label Grid.Column="4" Margin="56,16,43,15" Grid.Row="2">Monitor:</Label>
@@ -76,7 +76,7 @@
         <Label Grid.Column="4" Margin="56,16,32,15" Grid.Row="5">ID:</Label>
 
 
-        <TextBox x:Name="boxCPU" 
+        <TextBox x:Name="boxCPU" TextWrapping="Wrap"
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="1" Margin="0,16,0,15"/>
         <TextBox x:Name="boxGPU"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="2" Margin="0,16,0,15"/>
@@ -96,7 +96,7 @@
 
         <TextBox x:Name="boxKomentar" 
             materialDesign:HintAssist.Hint="Unesi komentar"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="5" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxID"  
+        <TextBox x:Name="boxID"  TextWrapping="Wrap"
             materialDesign:HintAssist.Hint="Unesi ID"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="5" Margin="0,16,0,15"/>
 
 

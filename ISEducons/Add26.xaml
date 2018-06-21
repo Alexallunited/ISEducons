@@ -53,11 +53,11 @@
             <ColumnDefinition Width="0.6*"/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="buttonOK" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Računar 2.1" Height="Auto" Margin="10,0,0,4" Grid.Column="1" 
+        <Button x:Name="buttonOK" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Sačuvaj podake" Height="Auto" Margin="10,0,0,4" Grid.Column="1" 
                Click="buttonOK_Click">
-            Sačuvaj
+            Dodaj
         </Button>
-        <Button x:Name="cancelButton" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Računar 2.1" Height="Auto" Margin="0,0,10,4" Grid.Column="5" 
+        <Button x:Name="cancelButton" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Odustani od čuvanja podataka" Height="Auto" Margin="0,0,10,4" Grid.Column="5" 
                 Click="cancelButton_Click">
             Odustani
         </Button>

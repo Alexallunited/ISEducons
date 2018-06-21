@@ -21,7 +21,7 @@
         
         xmlns:local="clr-namespace:ISEducons"
         mc:Ignorable="d"
-        Title="PocetniProzor" Height="480" Width="870" WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="800"  ResizeMode="CanResizeWithGrip" AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown"  >
+        Title="PocetniProzor" Height="580" Width="930" WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="500" MinWidth="900"  ResizeMode="CanResizeWithGrip" AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown"  >
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
@@ -51,42 +51,42 @@
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Izvestaj x:Name="Izvestaj" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
+                <local:Izvestaj x:Name="Izvestaj" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public" />
 
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Plan x:Name="Plan" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
+                <local:Plan x:Name="Plan" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public"/>
 
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Racunari26 x:Name="Racunari26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
+                <local:Racunari26 x:Name="Racunari26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public"/>
 
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Racunari29 x:Name="Racunari29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
+                <local:Racunari29 x:Name="Racunari29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public"/>
 
             </Grid>
 
             <Grid x:Name="Sve26" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
                 <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                    <local:Ucionica26 x:Name="ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
+                    <local:Ucionica26 x:Name="ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public"/>
 
                 </Grid>
                 <Grid x:Name="Update26Grid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                    <local:Update26 x:Name="Update26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
+                    <local:Update26 x:Name="Update26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public"/>
 
                 </Grid>
                 <Grid x:Name="Add26Grid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                    <local:Add26 x:Name="Add26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Visibility="Collapsed"/>
+                    <local:Add26 x:Name="Add26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Visibility="Collapsed" x:FieldModifier="public"/>
 
                 </Grid>
             </Grid>

@@ -160,6 +160,14 @@ namespace ISEducons
             IzvestajSave.IsEnabled = false;
             IzvestajExit.IsEnabled = false;
             Izvestaj.editor.Document.Blocks.Clear();
+
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Plan.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+            ucionica26.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
         }
 
         private void IzvestajOpen_Click(object sender, RoutedEventArgs e)
@@ -167,6 +175,14 @@ namespace ISEducons
             Izvestaj.Visibility = Visibility.Visible;
             IzvestajSave.IsEnabled = true;
             IzvestajExit.IsEnabled = true;
+
+            
+            Plan.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+            ucionica26.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
         }
         private void PlanExit_Click_1(object sender, RoutedEventArgs e)
         {
@@ -174,6 +190,13 @@ namespace ISEducons
             PlanSave.IsEnabled = false;
             PlanExit.IsEnabled = false;
             Plan.editor2.Document.Blocks.Clear();
+
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+            ucionica26.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
         }
 
         private void PlanOpen_Click(object sender, RoutedEventArgs e)
@@ -181,6 +204,13 @@ namespace ISEducons
             Plan.Visibility = Visibility.Visible;
             PlanSave.IsEnabled = true;
             PlanExit.IsEnabled = true;
+
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+            ucionica26.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
         }
 
         public delegate void TempDelegate();
@@ -235,6 +265,7 @@ namespace ISEducons
 
         private void Ucionica26_Click(object sender, RoutedEventArgs e)
         {
+            ucionica26.UcitajDatotekuResursa();
             ucionica26.Visibility = Visibility.Visible;
 
             Izvestaj.Visibility = Visibility.Collapsed;

@@ -96,7 +96,7 @@ namespace ISEducons
 
             foreach (Ucionica26Data person in lista)
             {
-                Console.WriteLine(person.Cpu);
+                Console.WriteLine(person.Id);
             }
 
             try
@@ -121,12 +121,31 @@ namespace ISEducons
         private void buttonOK_Click(object sender, RoutedEventArgs e)
         {
             MemorisiDatotekuResursa();
-            this.Visibility = Visibility.Collapsed;
+            UcitajDatotekuResursa();
+            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
+            if (pocetniProzor != null)
+            {
+                UcitajDatotekuResursa();
+                pocetniProzor.ucionica26.Visibility = Visibility.Visible;
+                this.Visibility = Visibility.Collapsed;
+                
+
+            }
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
+            UcitajDatotekuResursa();
             this.Visibility = Visibility.Collapsed;
+            UcitajDatotekuResursa();
+            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
+            if (pocetniProzor != null)
+            {
+                UcitajDatotekuResursa();
+                pocetniProzor.ucionica26.Visibility = Visibility.Visible;
+                this.Visibility = Visibility.Collapsed;
+                
+            }
         }
         //private void boxIP_PreviewTextInput(object sender, TextCompositionEventArgs e)
         //{

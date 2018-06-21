@@ -39,7 +39,7 @@ namespace ISEducons
         private readonly string _ucionica26 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ucionica26.bin");
 
 
-        private void UcitajDatotekuResursa()
+        public void UcitajDatotekuResursa()
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = null;
@@ -96,8 +96,16 @@ namespace ISEducons
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
             //Add26 addWin = new Add26();
+            ////this.Controls.Add(addWin);
             //addWin.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
+            if (pocetniProzor != null)
+            {
+                pocetniProzor.Add26.Visibility = Visibility.Visible;
+                this.Visibility = Visibility.Collapsed;
+                UcitajDatotekuResursa();
+            }
+            
 
             UcitajDatotekuResursa();
 
@@ -118,19 +126,29 @@ namespace ISEducons
                 lista[DataGridPeople.SelectedIndex].Mis,
                 lista[DataGridPeople.SelectedIndex].Tastatura,
                 lista[DataGridPeople.SelectedIndex].Komentar);
-            updWindow.Visibility = Visibility.Visible;
 
             UcitajDatotekuResursa();
+            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
+            if (pocetniProzor != null)
+            {
+
+                pocetniProzor.Update26.Visibility = Visibility.Visible;
+                this.Visibility = Visibility.Collapsed;
+                UcitajDatotekuResursa();
+            }
+
         }
 
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
+            
+                lista.RemoveAt(DataGridPeople.SelectedIndex);
 
-            lista.RemoveAt(DataGridPeople.SelectedIndex);
+                MemorisiDatotekuResursa();
 
-            MemorisiDatotekuResursa();
-
-            UcitajDatotekuResursa();
+                UcitajDatotekuResursa();
+            
+            
         }
     }
 }
