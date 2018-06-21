@@ -51,42 +51,42 @@
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Izvestaj x:Name="Izvestaj" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <local:Izvestaj x:Name="Izvestaj" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
 
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Plan x:Name="Plan" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <local:Plan x:Name="Plan" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
 
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Racunari26 x:Name="Racunari26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <local:Racunari26 x:Name="Racunari26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
 
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                <local:Racunari29 x:Name="Racunari29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <local:Racunari29 x:Name="Racunari29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
 
             </Grid>
 
             <Grid x:Name="Sve26" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
                 <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                    <local:Ucionica26 x:Name="ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                    <local:Ucionica26 x:Name="ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
 
                 </Grid>
-                <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+                <Grid x:Name="Update26Grid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                    <local:Update26 x:Name="Update26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                    <local:Update26 x:Name="Update26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" />
 
                 </Grid>
-                <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+                <Grid x:Name="Add26Grid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-                    <local:Add26 x:Name="Add26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                    <local:Add26 x:Name="Add26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Visibility="Collapsed"/>
 
                 </Grid>
             </Grid>
