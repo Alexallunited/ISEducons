@@ -19,13 +19,13 @@ using System.Windows.Shapes;
 namespace ISEducons
 {
     /// <summary>
-    /// Interaction logic for Ucionica26.xaml
+    /// Interaction logic for Ucionica29.xaml
     /// </summary>
-    public partial class Ucionica26 : UserControl
+    public partial class Ucionica29 : UserControl
     {
-        List<Ucionica26Data> lista = new List<Ucionica26Data>();
+        List<Ucionica29Data> lista = new List<Ucionica29Data>();
 
-        public Ucionica26()
+        public Ucionica29()
         {
             InitializeComponent();
 
@@ -36,7 +36,7 @@ namespace ISEducons
         }
 
         // SERIJALIZACIJA/DESERIJALIZACIJA IZ DATOTEKE
-        private readonly string _ucionica26 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ucionica26.bin");
+        private readonly string _ucionica29 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ucionica29.bin");
 
 
         public void UcitajDatotekuResursa()
@@ -47,9 +47,9 @@ namespace ISEducons
             try
             {
 
-                stream = File.Open(_ucionica26, FileMode.OpenOrCreate);
+                stream = File.Open(_ucionica29, FileMode.OpenOrCreate);
                 lista = null;
-                lista = (List<Ucionica26Data>)formatter.Deserialize(stream);
+                lista = (List<Ucionica29Data>)formatter.Deserialize(stream);
 
                 this.DataGridPeople.ItemsSource = lista;
 
@@ -79,7 +79,7 @@ namespace ISEducons
 
                 //lista ima ugradjen konstuktor za obsCol
 
-                stream = File.Open(_ucionica26, FileMode.OpenOrCreate);
+                stream = File.Open(_ucionica29, FileMode.OpenOrCreate);
                 formatter.Serialize(stream, lista);
             }
             catch
@@ -95,17 +95,17 @@ namespace ISEducons
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            //Add26 addWin = new Add26();
+            //Add29 addWin = new Add29();
             ////this.Controls.Add(addWin);
             //addWin.Visibility = Visibility.Visible;
             PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
             if (pocetniProzor != null)
             {
-                pocetniProzor.Add26.Visibility = Visibility.Visible;
+                pocetniProzor.Add29.Visibility = Visibility.Visible;
                 this.Visibility = Visibility.Collapsed;
                 UcitajDatotekuResursa();
             }
-            
+
 
             UcitajDatotekuResursa();
 
@@ -139,7 +139,7 @@ namespace ISEducons
             if (pocetniProzor != null)
             {
 
-                pocetniProzor.Update26.Visibility = Visibility.Visible;
+                pocetniProzor.Update29.Visibility = Visibility.Visible;
                 this.Visibility = Visibility.Collapsed;
                 UcitajDatotekuResursa();
             }
@@ -148,14 +148,14 @@ namespace ISEducons
 
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
-            
-                lista.RemoveAt(DataGridPeople.SelectedIndex);
 
-                MemorisiDatotekuResursa();
+            lista.RemoveAt(DataGridPeople.SelectedIndex);
 
-                UcitajDatotekuResursa();
-            
-            
+            MemorisiDatotekuResursa();
+
+            UcitajDatotekuResursa();
+
+
         }
     }
 }

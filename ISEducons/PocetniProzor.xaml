@@ -91,6 +91,24 @@
                 </Grid>
             </Grid>
 
+            <Grid x:Name="Sve29" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+                <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                    <local:Ucionica29 x:Name="ucionica29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public"/>
+
+                </Grid>
+                <Grid x:Name="Update29Grid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                    <local:Update29 x:Name="Update29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public"/>
+
+                </Grid>
+                <Grid x:Name="Add29Grid" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                    <local:Add29 x:Name="Add29" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Visibility="Collapsed" x:FieldModifier="public"/>
+
+                </Grid>
+            </Grid>
+            
             <Grid Grid.Column="1" Grid.Row="3" >
                 <materialDesign:Snackbar
             MessageQueue="{materialDesign:MessageQueue}"
@@ -188,7 +206,7 @@
                                 <MenuItem Header="Info o računarima">
                                     <MenuItem Name="Ucionica26" Header="Ucionica 26" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Click="Ucionica26_Click"></MenuItem>
                                     <MenuItem Name="Ucionica29" Header="Ucionica 29" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Click="Ucionica29_Click"></MenuItem>
-                                    <MenuItem Name="Ucionica10" Header="Ucionica 10" Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Click="Ucionica10_Click"></MenuItem>
+                                    
                                     <MenuItem.Icon>
                                         <materialDesign:PackIcon Kind="DesktopClassic"  />
                                     </MenuItem.Icon>

@@ -138,6 +138,9 @@
     <Compile Include="Add26.xaml.cs">
       <DependentUpon>Add26.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Add29.xaml.cs">
+      <DependentUpon>Add29.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AnotherCommandImplementation.cs" />
     <Compile Include="exitDialog.xaml.cs">
       <DependentUpon>exitDialog.xaml</DependentUpon>
@@ -196,13 +199,24 @@
       <DependentUpon>Ucionica26.xaml</DependentUpon>
     </Compile>
     <Compile Include="Ucionica26Data.cs" />
+    <Compile Include="Ucionica29.xaml.cs">
+      <DependentUpon>Ucionica29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ucionica29Data.cs" />
     <Compile Include="UIzradiDialog.xaml.cs">
       <DependentUpon>UIzradiDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Update26.xaml.cs">
       <DependentUpon>Update26.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Update29.xaml.cs">
+      <DependentUpon>Update29.xaml</DependentUpon>
+    </Compile>
     <Page Include="Add26.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add29.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -304,11 +318,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Ucionica29.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UIzradiDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Update26.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update29.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

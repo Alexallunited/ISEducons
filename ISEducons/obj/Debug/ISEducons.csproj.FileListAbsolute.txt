@@ -293,3 +293,9 @@ C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Update26.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Update26.baml
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Add26.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Add26.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Add29.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Ucionica29.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Update29.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Add29.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Ucionica29.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Update29.baml

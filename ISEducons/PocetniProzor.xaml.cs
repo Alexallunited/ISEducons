@@ -30,6 +30,7 @@ namespace ISEducons
         public PocetniProzor()
         {
             InitializeComponent();
+
             Izvestaj.Visibility = Visibility.Collapsed;
             Plan.Visibility = Visibility.Collapsed;
             Racunari26.Visibility = Visibility.Collapsed;
@@ -37,6 +38,7 @@ namespace ISEducons
             ucionica26.Visibility = Visibility.Collapsed;
             Update26.Visibility = Visibility.Collapsed;
             Add26.Visibility = Visibility.Collapsed;
+            Add29.Visibility = Visibility.Collapsed;
 
             IzvestajSave.IsEnabled = false;
             IzvestajExit.IsEnabled = false;
@@ -272,52 +274,46 @@ namespace ISEducons
             Plan.Visibility = Visibility.Collapsed;
             Racunari26.Visibility = Visibility.Collapsed;
             Racunari29.Visibility = Visibility.Collapsed;
-
-            //Racunari26.Visibility = Visibility.Visible;
-
-            //Izvestaj.Visibility = Visibility.Collapsed;
-            //Plan.Visibility = Visibility.Collapsed;
-            //Racunari29.Visibility = Visibility.Collapsed;
-            ////Racunari10.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Update29.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
+            Add29.Visibility = Visibility.Collapsed;
+            ucionica29.Visibility = Visibility.Collapsed;
         }
 
         private void Ucionica29_Click(object sender, RoutedEventArgs e)
         {
+            ucionica29.UcitajDatotekuResursa();
+            ucionica29.Visibility = Visibility.Visible;
 
-
-            Izvestaj.Visibility = Visibility.Collapsed;
-            Plan.Visibility = Visibility.Collapsed;
-            Racunari26.Visibility = Visibility.Collapsed;
-            Racunari29.Visibility = Visibility.Collapsed;
-
-            //Racunari29.Visibility = Visibility.Visible;
-
-            //Izvestaj.Visibility = Visibility.Collapsed;
-            //Plan.Visibility = Visibility.Collapsed;
-            //Racunari26.Visibility = Visibility.Collapsed;
-            ////Racunari10.Visibility = Visibility.Collapsed;
-        }
-
-        private void Ucionica10_Click(object sender, RoutedEventArgs e)
-        {
-            //Racunari10.Visibility = Visibility.Visible;
-
-            Izvestaj.Visibility = Visibility.Collapsed;
-            Plan.Visibility = Visibility.Collapsed;
-            Racunari26.Visibility = Visibility.Collapsed;
-            Racunari29.Visibility = Visibility.Collapsed;
-        }
-
-        private void Home_Click(object sender, RoutedEventArgs e)
-        {
-            //Racunari10.Visibility = Visibility.Visible;
             Izvestaj.Visibility = Visibility.Collapsed;
             Plan.Visibility = Visibility.Collapsed;
             Racunari26.Visibility = Visibility.Collapsed;
             Racunari29.Visibility = Visibility.Collapsed;
             ucionica26.Visibility = Visibility.Collapsed;
             Update26.Visibility = Visibility.Collapsed;
+            Update29.Visibility = Visibility.Collapsed;
             Add26.Visibility = Visibility.Collapsed;
+            Add29.Visibility = Visibility.Collapsed;
+
+        }
+
+        
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            //Racunari10.Visibility = Visibility.Visible;
+            ucionica26.Visibility = Visibility.Collapsed;
+
+            Izvestaj.Visibility = Visibility.Collapsed;
+            Plan.Visibility = Visibility.Collapsed;
+            Racunari26.Visibility = Visibility.Collapsed;
+            Racunari29.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Update29.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
+            Add29.Visibility = Visibility.Collapsed;
+            ucionica29.Visibility = Visibility.Collapsed;
 
             //if (Izvestaj.editor.Document.Blocks.Count <= 1)
             //{
