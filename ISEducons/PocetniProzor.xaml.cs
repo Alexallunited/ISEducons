@@ -35,6 +35,8 @@ namespace ISEducons
             Racunari26.Visibility = Visibility.Collapsed;
             Racunari29.Visibility = Visibility.Collapsed;
             ucionica26.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
 
             IzvestajSave.IsEnabled = false;
             IzvestajExit.IsEnabled = false;
@@ -283,6 +285,8 @@ namespace ISEducons
             Racunari26.Visibility = Visibility.Collapsed;
             Racunari29.Visibility = Visibility.Collapsed;
             ucionica26.Visibility = Visibility.Collapsed;
+            Update26.Visibility = Visibility.Collapsed;
+            Add26.Visibility = Visibility.Collapsed;
 
             //if (Izvestaj.editor.Document.Blocks.Count <= 1)
             //{

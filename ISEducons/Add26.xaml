@@ -76,27 +76,27 @@
         <Label Grid.Column="4" Margin="56,16,32,15" Grid.Row="5">ID:</Label>
 
 
-        <TextBox x:Name="boxCPU"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxCPU"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="1" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxGPU"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxGPU"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="2" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxRAM"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxRAM"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="3" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxPSU"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxPSU"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="4" Margin="0,16,0,15"/>
 
-        <TextBox x:Name="boxMaticna"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxMaticna"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="1" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxMonitor"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxMonitor"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="2" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxMis"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxMis"  
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="3" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxTastatura"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxTastatura" 
             materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="4" Margin="0,16,0,15"/>
 
-        <TextBox x:Name="boxKomentar"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxKomentar"  
             materialDesign:HintAssist.Hint="Unesi komentar"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="5" Margin="0,16,0,15"/>
-        <TextBox x:Name="boxID"  PreviewTextInput="boxIP_PreviewTextInput"
+        <TextBox x:Name="boxID"  
             materialDesign:HintAssist.Hint="Unesi ID"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="5" Margin="0,16,0,15"/>
 
 

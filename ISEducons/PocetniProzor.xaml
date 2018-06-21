@@ -73,11 +73,22 @@
 
             </Grid>
 
+            <Grid x:Name="Sve26" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+                <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
-            <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+                    <local:Ucionica26 x:Name="ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-                <local:Ucionica26 x:Name="ucionica26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </Grid>
+                <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
+                    <local:Update26 x:Name="Update26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+                </Grid>
+                <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
+
+                    <local:Add26 x:Name="Add26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+                </Grid>
             </Grid>
 
             <Grid Grid.Column="1" Grid.Row="3" >
@@ -87,33 +98,7 @@
             </Grid>
 
 
-            <Grid Grid.Column="1" Grid.Row="2" >
-                <materialDesign:Card Background="#FFFDBCAE"
-                      Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-                      Padding="1">
-                    <StackPanel HorizontalAlignment="Stretch" >
-                        <TextBlock Margin="16 16 12 8" FontSize="16" Foreground="#FF2D2D30">TO DO Lista(Jednostavnije od Tamare)</TextBlock>
-                        <CheckBox Margin="16,4,16,0" Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Foreground="#FF2D2D30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">Testiram širinu teksta</CheckBox>
-                        <CheckBox Margin="16 4 16 0" Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Foreground="#FF2D2D30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">Kodiram ovo već 4 dana non stop, samo gledam kada ću da poludim. Salim se (za to da ću da poludim) samo testiram širinu teksta</CheckBox>
-                        <CheckBox Margin="16,4,0,0" Style="{StaticResource MaterialDesignUserForegroundCheckBox}" HorizontalAlignment="Left" Width="393" Foreground="#FF2D2D30" VerticalAlignment="Stretch">Programerima treba više sunca</CheckBox>
-                        <Separator Style="{StaticResource MaterialDesignDarkSeparator}" Background="#33000000" />
-                        <StackPanel Margin="8 0 8 8" Orientation="Horizontal" HorizontalAlignment="Right">
-
-                            <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
-                                    ToolTip="Dodavanje novih zadataka na TO DO lstu" Width="30" Padding="2 0 0 0"
-                                    materialDesign:RippleAssist.IsCentered="True">
-                                <materialDesign:PackIcon Kind="Plus" Foreground="#E52D2D30" />
-                            </Button>
-
-                            <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundButton}"
-                                    ToolTip="Uklanjanje odrađenih (štikliranih) zadataka" Width="30" Padding="2 0 0 0"
-                                    materialDesign:RippleAssist.IsCentered="True">
-                                <materialDesign:PackIcon Kind="CheckAll" Foreground="#E52D2D30" />
-                            </Button>
-                        </StackPanel>
-                    </StackPanel>
-                </materialDesign:Card>
-            </Grid>
+            
 
 
             <materialDesign:DrawerHost HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="2" BorderBrush="{DynamicResource MaterialDesignDivider}" Grid.ColumnSpan="3"  Margin="-6,-6,-3,-2" Grid.RowSpan="4" >

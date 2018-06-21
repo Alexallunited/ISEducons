@@ -128,9 +128,9 @@ namespace ISEducons
         {
             this.Visibility = Visibility.Collapsed;
         }
-        private void boxIP_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            e.Handled = Regex.IsMatch(e.Text, "[^0-9.]+");
-        }
+        //private void boxIP_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        //{
+        //    e.Handled = Regex.IsMatch(e.Text, "[^0-9.a-Z- ]+");
+        //}
     }
 }

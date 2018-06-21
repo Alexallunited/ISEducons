@@ -95,8 +95,9 @@ namespace ISEducons
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            Add26 addWin = new Add26();
-            addWin.Visibility = Visibility.Visible;
+            
+            Add26.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
 
             UcitajDatotekuResursa();
 

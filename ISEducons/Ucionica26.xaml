@@ -49,7 +49,7 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="0.17*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="buttonAdd" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Računar 2.1" Height="Auto" Margin="10,10,135,10" Grid.Column="1" 
+        <Button x:Name="buttonAdd" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Dodaj novi računar" Height="Auto" Margin="10,10,135,10" Grid.Column="1" 
                 Click="buttonAdd_Click">
             Dodaj
         </Button>
@@ -82,9 +82,9 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="buttonUpdate" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Računar 2.1" Height="Auto" Margin="73,10" Grid.Column="2" 
+        <Button x:Name="buttonUpdate" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Izmeni postojeći računar" Height="Auto" Margin="73,10" Grid.Column="2" 
             Click="buttonUpdate_Click" Content="Izmeni"/>
-        <Button x:Name="buttonDelete" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Računar 2.1" Height="Auto" Margin="135,10,10,10" Grid.Column="3" 
+        <Button x:Name="buttonDelete" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="5" ToolTip="Obriši postojeći računar" Height="Auto" Margin="135,10,10,10" Grid.Column="3" 
             Click="buttonDelete_Click" Content="Obriši"/>
 
 
