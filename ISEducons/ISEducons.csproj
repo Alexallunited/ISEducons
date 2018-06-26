@@ -151,6 +151,11 @@
     <Compile Include="HardwareInfo.xaml.cs">
       <DependentUpon>HardwareInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HelpProzor\HelpProvider.cs" />
+    <Compile Include="HelpProzor\HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpProzor\JSHelper.cs" />
     <Compile Include="InfoEkran.xaml.cs">
       <DependentUpon>InfoEkran.xaml</DependentUpon>
     </Compile>
@@ -209,8 +214,14 @@
     <Compile Include="Update26.xaml.cs">
       <DependentUpon>Update26.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Update26Modal.xaml.cs">
+      <DependentUpon>Update26Modal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Update29.xaml.cs">
       <DependentUpon>Update29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Update29Modal.xaml.cs">
+      <DependentUpon>Update29Modal.xaml</DependentUpon>
     </Compile>
     <Page Include="Add26.xaml">
       <SubType>Designer</SubType>
@@ -229,6 +240,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="HardwareInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HelpProzor\HelpWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -330,7 +345,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Update26Modal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Update29.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Update29Modal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -397,6 +420,14 @@
   <ItemGroup>
     <Folder Include="Ucionica26\" />
     <Folder Include="Ucionica29\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Help\Slike\asdasd.png" />
+    <Resource Include="Help\Slike\favicon.png" />
+    <Resource Include="Help\Slike\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Help\Home.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

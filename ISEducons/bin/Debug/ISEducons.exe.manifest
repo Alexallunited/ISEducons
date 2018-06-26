@@ -84,14 +84,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ISEducons.exe" size="1149400">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ISEducons.exe" size="1319896">
       <assemblyIdentity name="ISEducons" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BXwkZM7LIppYwC0KHnIJ8hc30gESkeAuU0NK2F8NCwk=</dsig:DigestValue>
+        <dsig:DigestValue>kqc/wVBsDKVXm7KatZzD/HmvGqHu95C9stBNRDiY6yc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -347,6 +347,15 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="Help\Home.html" size="9510">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aA9a+hNVPzzMPM8esuMfY8ouUw0frYXGwrAviaW5BCs=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Icons\Favicon-2-1995223961.ico" size="370070">
     <hash>
       <dsig:Transforms>

@@ -115,8 +115,8 @@ namespace ISEducons
         {
 
 
-            Update26 updWindow = new Update26(
-                lista[DataGridPeople.SelectedIndex].Id,
+            Update29Modal update29Modal = new Update29Modal(
+               lista[DataGridPeople.SelectedIndex].Id,
                 lista[DataGridPeople.SelectedIndex].Cpu,
                 lista[DataGridPeople.SelectedIndex].Gpu,
                 lista[DataGridPeople.SelectedIndex].Ram,
@@ -130,19 +130,21 @@ namespace ISEducons
 
 
             UcitajDatotekuResursa();
+            update29Modal.Show();
 
-            updWindow.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+
+            //updWindow.Visibility = Visibility.Visible;
+            //this.Visibility = Visibility.Collapsed;
             UcitajDatotekuResursa();
 
-            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
-            if (pocetniProzor != null)
-            {
+            //PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;
+            //if (pocetniProzor != null)
+            //{
 
-                pocetniProzor.Update29.Visibility = Visibility.Visible;
-                this.Visibility = Visibility.Collapsed;
-                UcitajDatotekuResursa();
-            }
+            //    pocetniProzor.Update29.Visibility = Visibility.Visible;
+            //    this.Visibility = Visibility.Collapsed;
+            //    UcitajDatotekuResursa();
+            //}
 
         }
 

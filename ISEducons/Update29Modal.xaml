@@ -1,0 +1,102 @@
+﻿<Window x:Class="ISEducons.Update29Modal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISEducons"
+        mc:Ignorable="d"
+        
+             
+             
+             xmlns:Fluent="urn:fluent-ribbon"
+             xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             
+             
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+             
+             d:DesignHeight="450" d:DesignWidth="740" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" 
+        AllowsTransparency="True" MouseLeftButtonDown="WindowMouseLeftButtonDown"
+        MinHeight="450" MinWidth="740"
+        Height="450" Width="740"
+        >
+
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.15*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="buttonOK" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Sačuvaj izmene" Height="Auto" Margin="10,0,0,4" Grid.Column="1" 
+               Click="buttonOK_Click">
+            Izmeni
+        </Button>
+        <Button x:Name="cancelButton" Style="{DynamicResource MaterialDesignRaisedDarkButton}"  BorderThickness="0" Grid.Row="6" ToolTip="Odustani od izmena" Height="Auto" Margin="0,0,10,4" Grid.Column="5" 
+                Click="cancelButton_Click">
+            Odustani
+        </Button>
+
+        <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="1">CPU:</Label>
+        <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="2">GPU:</Label>
+        <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="3">RAM:</Label>
+        <Label Grid.Column="1" Margin="56,16,56,15" Grid.Row="4" VerticalAlignment="Center">PSU:</Label>
+
+        <Label Grid.Column="4" Margin="56,16,43,15" Grid.Row="1">Matična:</Label>
+        <Label Grid.Column="4" Margin="56,16,43,15" Grid.Row="2">Monitor:</Label>
+        <Label Grid.Column="4" Margin="56,16,56,15" Grid.Row="3">Miš:</Label>
+        <Label Grid.Column="4" Margin="56,16,33,15" Grid.Row="4">Tastatura:</Label>
+
+        <Label Grid.Column="1" Margin="56,16,32,15" Grid.Row="5">Komentar:</Label>
+        <Label Grid.Column="4" Margin="56,16,32,15" Grid.Row="5">ID:</Label>
+
+
+        <TextBox x:Name="boxCPU" TextWrapping="Wrap"
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="1" Margin="0,16,0,15"/>
+        <TextBox x:Name="boxGPU"  
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="2" Margin="0,16,0,15"/>
+        <TextBox x:Name="boxRAM"  
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="3" Margin="0,16,0,15"/>
+        <TextBox x:Name="boxPSU"
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.Row="4" Margin="0,16,0,15"/>
+
+        <TextBox x:Name="boxMaticna"  
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="1" Margin="0,16,0,15"/>
+        <TextBox x:Name="boxMonitor"  
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="2" Margin="0,16,0,15"/>
+        <TextBox x:Name="boxMis"  
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="3" Margin="0,16,0,15"/>
+        <TextBox x:Name="boxTastatura"  
+            materialDesign:HintAssist.Hint="Unesi komonentu"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.Row="4" Margin="0,16,0,15"/>
+
+        <TextBox x:Name="boxKomentar" 
+            materialDesign:HintAssist.Hint="Unesi komentar"  ToolTip="Unesi podmrežu" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="5" Margin="0,16,0,15"/>
+        <TextBox x:Name="boxID"  TextWrapping="Wrap"
+            materialDesign:HintAssist.Hint="Unesi ID"  ToolTip="Unesi podmrežu" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="5" Margin="0,16,0,15"/>
+
+
+    </Grid>
+</Window>

@@ -33,43 +33,43 @@ namespace ISEducons
         {
 
 
-            this.Hide();
-            PocetniProzor test = new PocetniProzor();
-            test.ShowDialog();
+            //this.Hide();
+            //PocetniProzor test = new PocetniProzor();
+            //test.ShowDialog();
 
 
 
 
 
-            //if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameA && PasswordBox.Password == ISEducons.Properties.Resources.PasswordA) //ovo bas i nije najsigurniji nacin da se cuva passworda al ajd sad
-            //{
-            //    this.Hide();
-            //    PocetniProzor test = new PocetniProzor();
-            //    test.ShowDialog();
-            //}
-            //else
-            //{
-            //    if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameU && PasswordBox.Password == ISEducons.Properties.Resources.PasswordU)
-            //    {
+            if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameA && PasswordBox.Password == ISEducons.Properties.Resources.PasswordA) //ovo bas i nije najsigurniji nacin da se cuva passworda al ajd sad
+            {
+                this.Hide();
+                PocetniProzor test = new PocetniProzor();
+                test.ShowDialog();
+            }
+            else
+            {
+                if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameU && PasswordBox.Password == ISEducons.Properties.Resources.PasswordU)
+                {
 
 
-            //        MainWindowDialogHost.DialogContent = new KorisnikPostojiDialog(); //otvara UserControl exitDialog kao dialog
-            //        MainWindowDialogHost.IsOpen = true;
+                    MainWindowDialogHost.DialogContent = new KorisnikPostojiDialog(); //otvara UserControl exitDialog kao dialog
+                    MainWindowDialogHost.IsOpen = true;
 
-            //    }
+                }
 
 
-            //    else
-            //    {
-            //        if ((UsernameBox.Text != ISEducons.Properties.Resources.UsernameA || UsernameBox.Text != ISEducons.Properties.Resources.UsernameU)
-            //            &&
-            //           (PasswordBox.Password != ISEducons.Properties.Resources.PasswordA || PasswordBox.Password != ISEducons.Properties.Resources.PasswordU))
+                else
+                {
+                    if ((UsernameBox.Text != ISEducons.Properties.Resources.UsernameA || UsernameBox.Text != ISEducons.Properties.Resources.UsernameU)
+                        &&
+                       (PasswordBox.Password != ISEducons.Properties.Resources.PasswordA || PasswordBox.Password != ISEducons.Properties.Resources.PasswordU))
 
-            //            MainWindowDialogHost.DialogContent = new KorisnikNePostojiDialog(); //otvara UserControl exitDialog kao dialog
-            //            MainWindowDialogHost.IsOpen = true;
+                        MainWindowDialogHost.DialogContent = new KorisnikNePostojiDialog(); //otvara UserControl exitDialog kao dialog
+                    MainWindowDialogHost.IsOpen = true;
 
-            //    }
-            //}
+                }
+            }
 
         }
 
@@ -83,9 +83,42 @@ namespace ISEducons
             // Test for Enter key.
             if (e.Key == Key.Enter)
             {
-                this.Hide();
-                PocetniProzor test = new PocetniProzor();
-                test.ShowDialog();
+                //this.Hide();
+                //PocetniProzor test = new PocetniProzor();
+                //test.ShowDialog();
+
+
+                if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameA && PasswordBox.Password == ISEducons.Properties.Resources.PasswordA) //ovo bas i nije najsigurniji nacin da se cuva passworda al ajd sad
+                {
+                    this.Hide();
+                    PocetniProzor test = new PocetniProzor();
+                    test.ShowDialog();
+                }
+                else
+                {
+                    if (UsernameBox.Text == ISEducons.Properties.Resources.UsernameU && PasswordBox.Password == ISEducons.Properties.Resources.PasswordU)
+                    {
+
+
+                        MainWindowDialogHost.DialogContent = new KorisnikPostojiDialog(); //otvara UserControl exitDialog kao dialog
+                        MainWindowDialogHost.IsOpen = true;
+
+                    }
+
+
+                    else
+                    {
+                        if ((UsernameBox.Text != ISEducons.Properties.Resources.UsernameA || UsernameBox.Text != ISEducons.Properties.Resources.UsernameU)
+                            &&
+                           (PasswordBox.Password != ISEducons.Properties.Resources.PasswordA || PasswordBox.Password != ISEducons.Properties.Resources.PasswordU))
+
+                            MainWindowDialogHost.DialogContent = new KorisnikNePostojiDialog(); //otvara UserControl exitDialog kao dialog
+                        MainWindowDialogHost.IsOpen = true;
+
+                    }
+                }
+
+
             }
         }
     }

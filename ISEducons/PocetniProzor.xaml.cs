@@ -19,6 +19,7 @@ using System.IO;
 using MaterialDesignColors;
 using MaterialDesignThemes.Wpf;
 using Microsoft.Win32;
+using System.Diagnostics;
 
 namespace ISEducons
 {
@@ -88,9 +89,11 @@ namespace ISEducons
 
         private void dokumentacija_Click(object sender, RoutedEventArgs e)
         {
-            MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
-            MainWindowDialogHost.IsOpen = true;
-            
+            //MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
+            //MainWindowDialogHost.IsOpen = true;
+
+            Process.Start("https://github.com/Alexallunited/ISEducons/wiki/Informacioni-sistem-Univerziteta-Educons");
+
         }
 
         private void about_Click(object sender, RoutedEventArgs e)
@@ -136,7 +139,7 @@ namespace ISEducons
             }
             else if (e.Key == Key.F1) //KeyPress za HELP tj. dokumentaciju
             {
-
+                Process.Start("https://github.com/Alexallunited/ISEducons/wiki/Informacioni-sistem-Univerziteta-Educons");
             }
             else if (e.Key == Key.Escape) // Nisam siguran da mi je ovo potrebno al neka stoji za sada tu, mozda cu implementirati logout ili exit na ovo dugme
             {

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<title>Univerzitet Educons</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="Slike/favicon.png">
+
+<style>
+	.mySlides {display:none}
+	.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+	
+	
+	/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+	
+	.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+	
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:5px;">
+    <a href="#home" class="w3-bar-item w3-button"><img src="Slike/logo.png" class="w3-round w3-image w3-opacity-min" alt="Logo" width="120" height="175"></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#1" class="w3-bar-item w3-button w3-xlarge">Paragraf 1</a>
+      <a href="#2" class="w3-bar-item w3-button w3-xlarge">Paragraf 2</a>
+      <a href="#3" class="w3-bar-item w3-button w3-xlarge">Paragraf 3</a>
+	  <a href="#4" class="w3-bar-item w3-button w3-xlarge">Paragraf 4</a>
+	  <a href="#5" class="w3-bar-item w3-button w3-xlarge w3-hide-large w3-hide-medium">Paragraf 5</a>
+		
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1100px;min-width:400px" id="home">
+  <img class="w3-image" src="Slike/x.jpg" alt="Home slika" width="1100" height="400">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+	<h3  style="color:white;">DVOR Restoran nacionalne kuhinje</h3>
+	<p class="w3-large w3-hide-small" style="color:white;">Telefon: +381 69/ 78 77 897</p>
+	<p class="w3-large w3-hide-small" style="color:white;">Dunavska 33, Novi Sad</p>
+	<a href="#rezervacija" class="w3-button w3-round w3-hide-large w3-hide-medium w3-center w3-large w3-light-grey w3-block">Rezervacije</a>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+
+
+  <!-- Paragraf 1 -->
+  <div class="w3-row w3-padding-64" id="1">
+    <div class="w3-col m6 w3-padding-large w3-hide-small ">
+		<div class="container">
+     <img src="Slike/x.png" class="w3-round w3-image w3-opacity-min" alt="Slika" width="600" height="750">
+			
+			</div>
+    </div>
+	  
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Paragraf 1</h1><br>
+	  
+      <p class="w3-large" style="text-align:justify">Graece persecuti instructior id vel, per error perfecto no. Labitur ornatus id ius, et audiam scriptorem cum, et possit conclusionemque has. Quo mucius bonorum ut, cu insolens platonem cum. Ius ut bonorum dolorum, adhuc congue utinam ius in. Pri adhuc regione repudiare id, malis nostro eu mei. Et pri option luptatum delicatissimi. Pro id dolorem offendit.</p>
+<p class="w3-large" style="text-align:justify">
+Eu vocibus scribentur ullamcorper sit, has in lorem iracundia argumentum, offendit explicari eos ad. Ei his brute choro. Ignota commune at sed. Ad mundi viderer eum</p>
+      <p class="w3-large" style="text-align:justify">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  
+    </div>
+  </div>
+  
+  <hr>
+  <!-- End Paragraf 1 -->
+  
+  
+  
+  <!-- Paragraf 2 -->
+  <div class="w3-row w3-padding-64" id="2">
+    <div class="w3-col m6 w3-padding-large w3-hide-small ">
+		<div class="container">
+     <img src="Slike/x.png" class="w3-round w3-image w3-opacity-min" alt="Slika" width="600" height="750">
+			
+			</div>
+    </div>
+	  
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Paragraf 2</h1><br>
+	  
+      <p class="w3-large" style="text-align:justify">Graece persecuti instructior id vel, per error perfecto no. Labitur ornatus id ius, et audiam scriptorem cum, et possit conclusionemque has. Quo mucius bonorum ut, cu insolens platonem cum. Ius ut bonorum dolorum, adhuc congue utinam ius in. Pri adhuc regione repudiare id, malis nostro eu mei. Et pri option luptatum delicatissimi. Pro id dolorem offendit.</p>
+<p class="w3-large" style="text-align:justify">
+Eu vocibus scribentur ullamcorper sit, has in lorem iracundia argumentum, offendit explicari eos ad. Ei his brute choro. Ignota commune at sed. Ad mundi viderer eum</p>
+      <p class="w3-large" style="text-align:justify">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  
+    </div>
+  </div>
+  <hr>
+  <!-- End Paragraf 2 -->
+  
+  
+  
+  <!-- Paragraf 3 -->
+  <div class="w3-row w3-padding-64" id="3">
+    <div class="w3-col m6 w3-padding-large w3-hide-small ">
+		<div class="container">
+     <img src="Slike/x.png" class="w3-round w3-image w3-opacity-min" alt="Slika" width="600" height="750">
+			
+			</div>
+    </div>
+	  
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Paragraf 3</h1><br>
+	  
+      <p class="w3-large" style="text-align:justify">Graece persecuti instructior id vel, per error perfecto no. Labitur ornatus id ius, et audiam scriptorem cum, et possit conclusionemque has. Quo mucius bonorum ut, cu insolens platonem cum. Ius ut bonorum dolorum, adhuc congue utinam ius in. Pri adhuc regione repudiare id, malis nostro eu mei. Et pri option luptatum delicatissimi. Pro id dolorem offendit.</p>
+<p class="w3-large" style="text-align:justify">
+Eu vocibus scribentur ullamcorper sit, has in lorem iracundia argumentum, offendit explicari eos ad. Ei his brute choro. Ignota commune at sed. Ad mundi viderer eum</p>
+      <p class="w3-large" style="text-align:justify">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  
+    </div>
+  </div>
+  <hr>
+  <!-- End Paragraf 3 -->
+  
+  <!-- Paragraf 4 -->
+  <div class="w3-row w3-padding-64" id="4">
+    <div class="w3-col m6 w3-padding-large w3-hide-small ">
+		<div class="container">
+     <img src="Slike/x.png" class="w3-round w3-image w3-opacity-min" alt="Slika" width="600" height="750">
+			
+			</div>
+    </div>
+	  
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Paragraf 4</h1><br>
+	  
+      <p class="w3-large" style="text-align:justify">Graece persecuti instructior id vel, per error perfecto no. Labitur ornatus id ius, et audiam scriptorem cum, et possit conclusionemque has. Quo mucius bonorum ut, cu insolens platonem cum. Ius ut bonorum dolorum, adhuc congue utinam ius in. Pri adhuc regione repudiare id, malis nostro eu mei. Et pri option luptatum delicatissimi. Pro id dolorem offendit.</p>
+<p class="w3-large" style="text-align:justify">
+Eu vocibus scribentur ullamcorper sit, has in lorem iracundia argumentum, offendit explicari eos ad. Ei his brute choro. Ignota commune at sed. Ad mundi viderer eum</p>
+      <p class="w3-large" style="text-align:justify">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  
+    </div>
+  </div>
+  <!-- End Paragraf 4 -->
+  
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+
+	
+
+
+  <p>Za predmet: Projektovanje softvera</p>
+</footer>
+
+	
+	
+</body>
+</html>

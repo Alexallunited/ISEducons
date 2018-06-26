@@ -115,7 +115,7 @@ namespace ISEducons
         {
 
 
-            Update26 updWindow = new Update26(
+            Update26Modal update26Modal = new Update26Modal(
                 lista[DataGridPeople.SelectedIndex].Id,
                 lista[DataGridPeople.SelectedIndex].Cpu,
                 lista[DataGridPeople.SelectedIndex].Gpu,
@@ -130,23 +130,25 @@ namespace ISEducons
 
 
             UcitajDatotekuResursa();
+
+            update26Modal.Show();
             //updWindow.Show();      <-- Ovo ce da radi, medjutim UserControl ne moze da se prikaze na ovaj nacin
 
 
-            updWindow.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            //updWindow.Visibility = Visibility.Visible;
+            //this.Visibility = Visibility.Collapsed;
             UcitajDatotekuResursa();
 
             
 
-            PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;  //Ovo nam omogucava da koristimo Properties od drugog UserControl-a
-            if (pocetniProzor != null)
-            {
-                //pocetniProzor = updWindow; 
-                pocetniProzor.Update26.Visibility = Visibility.Visible;
-                this.Visibility = Visibility.Collapsed;
-                UcitajDatotekuResursa();
-            }
+            //PocetniProzor pocetniProzor = Window.GetWindow(this) as PocetniProzor;  //Ovo nam omogucava da koristimo Properties od drugog UserControl-a
+            //if (pocetniProzor != null)
+            //{
+            //    //pocetniProzor = updWindow; 
+            //    pocetniProzor.Update26.Visibility = Visibility.Visible;
+            //    this.Visibility = Visibility.Collapsed;
+            //    UcitajDatotekuResursa();
+            //}
 
         }
 
