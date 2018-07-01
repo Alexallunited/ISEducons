@@ -18,8 +18,8 @@
                 Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
                 CommandParameter="Sample2Cancel"
                 >
-            <StackPanel Orientation="Horizontal" Width="62">
-                <TextBlock Text="   Ok" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="60"/>
+            <StackPanel Orientation="Horizontal" Width="63">
+                <TextBlock Text="Potvrdi" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="63"/>
             </StackPanel>
         </Button>
 

@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="ISEducons.OSoftveruModal"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISEducons"
+        mc:Ignorable="d"
+        
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        
+        Height="300" Width="300"  >
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Exit" Style="{DynamicResource MaterialDesignRaisedDarkButton}" BorderThickness="0" Height="50" Width="110" Margin="95,76,95,24" Grid.Row="1" Background="#FF2D2D30" 
+                Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                CommandParameter="Sample2Cancel" Grid.ColumnSpan="2"
+                ToolTip="Zatvori trenutno otvoren prozor"
+                >
+
+            <StackPanel Orientation="Horizontal" Width="60">
+                <TextBlock Text="Zatvori" Foreground="#FFf0f0f0" FontFamily="Century Gothic" FontWeight="Bold" FontSize="18" Height="22" Width="60"/>
+            </StackPanel>
+
+        </Button>
+
+        <Image Source="Icons\edulogo.png" Grid.ColumnSpan="2" Margin="75,-34,75,34"/>
+
+        <Label HorizontalAlignment="Center" FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="61,84,61,26" Content="Aleksandar Inc." Foreground="#DD000000" Width="178" Grid.ColumnSpan="2"/>
+        <Label HorizontalAlignment="Center" ToolTip="Kliknite dva puta mišem kako biste saznali više o ovoj licenci" FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="80,129,81,131" Content="MIT Licenca" Foreground="#DD000000" Width="139" Grid.ColumnSpan="2" MouseDoubleClick="Label_MouseDoubleClick" Grid.RowSpan="2"/>
+        <Label HorizontalAlignment="Center" FontFamily="Century Gothic" FontWeight="Bold" FontSize="22" Margin="80,24,80,86" Content="Verzija 2.8.5" Foreground="#DD000000" Width="140" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</UserControl>

@@ -99,9 +99,9 @@ namespace ISEducons
         private void about_Click(object sender, RoutedEventArgs e)
         {
 
-            MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
+            MainWindowDialogHost.DialogContent = new OSoftveruModal(); //otvara UserControl exitDialog kao dialog
             MainWindowDialogHost.IsOpen = true;
-            
+
         }
 
         private void exit_Click(object sender, RoutedEventArgs e)
@@ -155,8 +155,8 @@ namespace ISEducons
 
         private void TestDugme_Click(object sender, RoutedEventArgs e)
         {
-            NetworkScanner scan = new NetworkScanner();
-            scan.Show(); //Nemodalni prozor
+            MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
+            MainWindowDialogHost.IsOpen = true;
         }
 
         private void IzvestajExit_Click_1(object sender, RoutedEventArgs e)

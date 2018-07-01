@@ -306,3 +306,5 @@ C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\Update29Modal.baml
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\HelpProzor\HelpWindow.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\ISEducons_Content.g.cs
 C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\HelpProzor\HelpWindow.baml
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\OSoftveruModal.g.cs
+C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\OSoftveruModal.baml

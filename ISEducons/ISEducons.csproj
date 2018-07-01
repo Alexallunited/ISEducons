@@ -183,6 +183,9 @@
     <Compile Include="NetworkScannerValidacija.xaml.cs">
       <DependentUpon>NetworkScannerValidacija.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OSoftveruModal.xaml.cs">
+      <DependentUpon>OSoftveruModal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PaletteSelectorViewModel.cs" />
     <Compile Include="Plan.xaml.cs">
       <DependentUpon>Plan.xaml</DependentUpon>
@@ -306,6 +309,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="NetworkScannerValidacija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OSoftveruModal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

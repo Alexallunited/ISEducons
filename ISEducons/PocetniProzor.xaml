@@ -49,6 +49,13 @@
             </Grid.ColumnDefinitions>
 
 
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Button x:Name="TestDugme" Click="TestDugme_Click" ToolTip="Test dugme OČEKIVANO ZAR NE?">
+                    Početna strana je u izradi
+                </Button>
+
+            </Grid>
+            
             <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3">
 
                 <local:Izvestaj x:Name="Izvestaj" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" x:FieldModifier="public" />
