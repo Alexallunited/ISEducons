@@ -92,7 +92,7 @@ namespace ISEducons
             //MainWindowDialogHost.DialogContent = new UIzradiDialog(); //otvara UserControl exitDialog kao dialog
             //MainWindowDialogHost.IsOpen = true;
 
-            Process.Start("https://github.com/Alexallunited/ISEducons/wiki/Informacioni-sistem-Univerziteta-Educons");
+            Process.Start("https://github.com/Alexallunited/ISEducons/wiki/Pomo%C4%87");
 
         }
 
@@ -139,7 +139,7 @@ namespace ISEducons
             }
             else if (e.Key == Key.F1) //KeyPress za HELP tj. dokumentaciju
             {
-                Process.Start("https://github.com/Alexallunited/ISEducons/wiki/Informacioni-sistem-Univerziteta-Educons");
+                Process.Start("https://github.com/Alexallunited/ISEducons/wiki/Pomo%C4%87");
             }
             else if (e.Key == Key.Escape) // Nisam siguran da mi je ovo potrebno al neka stoji za sada tu, mozda cu implementirati logout ili exit na ovo dugme
             {
