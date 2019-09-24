@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alexa\Desktop\ISEducons\ISEducons\obj\Debug\
+C:\Users\Alexallunited\Source\Repos\ISEducons\ISEducons\obj\Debug\
 ISEducons
 none
 false
 DEBUG;TRACE
-C:\Users\alexa\Desktop\ISEducons\ISEducons\App.xaml
+C:\Users\Alexallunited\Source\Repos\ISEducons\ISEducons\App.xaml
 31-1535149459
 1-816774613
-42-1747913189
-31-1031476458
+43-1891033869
+311343224655
 Add26.xaml;Add29.xaml;exitDialog.xaml;exitScreen.xaml;HardwareInfo.xaml;HelpProzor\HelpWindow.xaml;home.xaml;InfoEkran.xaml;itSektor.xaml;Izgled.xaml;Izvestaj.xaml;KorisnikNePostojiDialogxaml.xaml;KorisnikPostojiDialog.xaml;LogInProzor.xaml;MainWindow.xaml;NetworkScanner.xaml;NetworkScannerDialog.xaml;NetworkScannerValidacija.xaml;OSoftveruModal.xaml;Plan.xaml;PocetniProzor.xaml;Racunari26.xaml;Racunari29.xaml;SacuvajDialog.xaml;Ucionica26.xaml;Ucionica29.xaml;UIzradiDialog.xaml;Update26.xaml;Update26Modal.xaml;Update29.xaml;Update29Modal.xaml;
 
-False
+True
 

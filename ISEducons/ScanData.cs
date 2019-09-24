@@ -37,9 +37,9 @@ namespace ISEducons
             this.Status = Status;
         }
 
-        public string Ip { get => ip; set { ip = value; OnNotifyPropertyChanged("Ip"); } }
-        public string Hostname { get => hostname; set { hostname = value; OnNotifyPropertyChanged("Hostname"); } }
-        public string Status { get => status; set { status = value; OnNotifyPropertyChanged("Status"); } }
+        public string Ip { get { return ip; } set { ip = value; OnNotifyPropertyChanged("Ip"); } }
+        public string Hostname { get { return hostname; } set { hostname = value; OnNotifyPropertyChanged("Hostname"); } }
+        public string Status { get { return status; } set { status = value; OnNotifyPropertyChanged("Status"); } }
 
 
 
